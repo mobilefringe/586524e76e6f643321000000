@@ -454,9 +454,9 @@ legend{
     display: none;
 }
 
-.bottom_nav .nav_site_map{
+.bottom_nav .nav_site_map {
     color: #64676c;
-    float:left;
+    // float:left;
     width: 20%\9;    
     font-size:.9em;    
     // width: 30%;
