@@ -396,11 +396,10 @@ legend{
     font-size: 32px;
     text-shadow: 1px 1px 1px rgba(56,56,56, 0.25);
 }
-.newsletter_box{
+.newsletter_box {
     margin-top: 20px;
     color: black;
 }
-
 .newsletter_box span {
     font-weight: lighter;
     padding: 5px 0px 10px;
@@ -408,7 +407,6 @@ legend{
     color: gray;
     font-size: 0.8em;
 }
-
 .newsletter_box #fieldEmail {
     margin: 0;
     margin-bottom: 9px;
