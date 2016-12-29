@@ -11,6 +11,13 @@ function init() {
 
     renderHomeHours();
     
+    var pathArray = window.location.pathname.split( '/' );
+    console.log(pathArray);
+    var slug = pathArray[pathArray.length-1];
+    if(slug === "cornwall-contact-us") {
+        $("#welcome_message").show();
+    }
+    
     var feature_items = getFeatureList();
     var one_item = feature_items.slice(0,1);
     renderFeatureItems('#feature_item','#feature_item_template', one_item);
