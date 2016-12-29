@@ -45,8 +45,7 @@ function init() {
         }, 500)
     });
 }
-
-      
+  
 function renderGeneral(container, template, collection){
     var item_list = [];
     var item_rendered = [];
@@ -369,9 +368,8 @@ function renderPromotions(container, template, collection){
             val.store_name = "Aberdeen Mall Kamloops";
             // val.image_url = "";
         }
-        
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-            val.promo_image_url_abs  = "//www.mallmaverick.com/system/sites/logo_images/000/000/028/original/aberdeen.jpg?1393004108";
+            val.promo_image_url_abs  = "//www.mallmaverick.com/system/sites/logo_images/000/000/040/original/marlborough_logo.jpg?1399497653";
         }
         
         var show_date = moment(val.show_on_web_date);
