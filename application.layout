@@ -94,8 +94,14 @@
                             <a href='/events' >EVENTS</a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/pages/cornwall-guest-services' >GUEST SERVICES</a>
-                        </li>      
+                            <a href='' >GUEST SERVICES</a>
+                        </li>   
+                        <li class="mobile_menu_item">
+                            <a href='/pages/marlborough-guest-services'>Guest Services</a>
+                        </li>
+                        <li class="mobile_menu_item">
+                            <a href='/pages/marlborough-secuity'>Security</a>
+                        </li>
                         <li class="mobile_menu_header" >
                             <a href='/jobs' >CAREERS</a>
                         </li>         
@@ -106,25 +112,22 @@
                             <a href='/hours'>Shopping Hours</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-leasing'>Leasing</a>
+                            <a href='/pages/marlborough-leasing'>Leasing</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-mall-info'>Mall Info</a>
+                            <a href='/pages/marlborough-community-donations'>Community/Donations</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-accessibility'>Accessibility</a>
+                            <a href='/pages/marlborough-mall-walking-program'>Mall Walking</a>
                         </li>        
                         <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-community-wifi'>Community Relations</a>
+                          <a href='/pages/marlborough-contact-us'>Contact Us</a>
                         </li>
                         <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-contact-us'>Contact Us</a>
+                          <a href='/pages/marlborough-media-kit'>Media Kit</a>
                         </li>
                         <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-security'>Security</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-parking-at-cornwall-centre'>Parking Info</a>
+                          <a href='/pages/marlborough-privacy-policy'>Privacy Policy</a>
                         </li>
                         <li class="mobile_menu_header" >
                             <a href='/posts' >BLOG</a>
@@ -179,38 +182,43 @@
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/events'">EVENTS</button>
                     </li>
-                    <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/pages/cornwall-guest-services'">GUEST SERVICES</button>
-                    </li>            
+                    <li class="dropdown ">
+                        <button class="btn-nav" data-toggle="dropdown">Guest Services</button>                                                     
+                        <ul class="dropdown-menu">                            
+                            <li>
+                                <a class="nav_a" href='/stores' target='_self'><span>Guest Services</span></a>                                
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/map' target='_self'><span>Security</span></a>                                
+                            </li>
+                        </ul>
+                    </li> 
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/jobs'">CAREERS</button>
                     </li>             
                     <li class="dropdown ">
                         <button class="btn-nav" data-toggle="dropdown">ABOUT US</button>                                                     
-                        <ul class="dropdown-menu" style="right:0px; left:auto;">                            
+                        <ul class="dropdown-menu" style="right:0px; left:auto;"> 
                             <li>
-                                <a class="nav_a" href='/hours' target='_self'><span>Shopping Hours</span></a>                                
+                                <a class="nav_a" href='/hours' target='_self'><span>Shopping Hours</span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-leasing' target='_self'><span>Leasing</span></a>                                
+                                <a class="nav_a" href='/pages/marlborough-leasing' target='_self'>Leasing</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-mall-info' target='_self'><span>Mall Info</span></a>                              
+                                <a class="nav_a" href='/pages/marlborough-community-donations' target='_self'>Community/Donations</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-accessibility' target='_self'><span>Accessibility</span></a>                      
+                                <a class="nav_a" href='/pages/marlborough-mall-walking-program' target='_self'>Mall Walking</a>
+                            </li>        
+                            <li>
+                                <a class="nav_a" href='/pages/marlborough-contact-us' target='_self'>Contact Us</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-community-wifi' target='_self'><span>Community Relations</span></a>              
+                                <a class="nav_a" href='/pages/marlborough-media-kit' target='_self'>Media Kit</a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-contact-us' target='_self'><span>Contact Us</span></a>                            
-                            </li>
-                            <li>
-                                <a class="nav_a" href='/pages/cornwall-security' target='_self'><span>Security</span></a>                                
-                            </li>
-                            <li>
-                                <a class="nav_a" href='/pages/cornwall-parking-at-cornwall-centre' target='_self'><span>Parking Info</span> </a>        
+                                <a class="nav_a" href='/pages/marlborough-privacy-policy' target='_self'>Privacy Policy</a>
                             </li>
                         </ul>
                     </li>
