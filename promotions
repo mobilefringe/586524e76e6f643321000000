@@ -46,10 +46,8 @@
                 <div class="line_break"></div>
             </script>
         </div>
-        <!--<div class="line_break">&nbsp;</div>-->
     </div>
 </div>
-
 <script>
     $(document).ready(function(e){
         init(e);
