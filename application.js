@@ -13,7 +13,7 @@ function init() {
     
     var pathArray = window.location.pathname;
     console.log(pathArray);
-    if(slug === "cornwall-contact-us") {
+    if(pathArray === "cornwall-contact-us") {
         $("#welcome_message").show();
     }
     
