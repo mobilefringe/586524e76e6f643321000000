@@ -593,7 +593,7 @@ function renderPosts(container, template, collection){
             val.image_url = val.image_url;
         }
         
-        if(val.author.lenth <= 0) {
+        if (val.author.lenth <= 0) {
             val.author = "Marlborough Mall"
         } else {
             val.author = val.author;
