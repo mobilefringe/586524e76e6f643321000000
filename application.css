@@ -1044,7 +1044,8 @@ a.btn-prime {
     position: absolute;
     top: 0;
 }
-.long_feature_box{
+.long_feature_box {
+    height: 193px;
     font-family:futura_condensed;
     overflow: hidden;
 }
@@ -2209,7 +2210,6 @@ td.stores_pin{
 }
 .long_feature_box {
     margin-bottom: 20px;
-    height: 193px;
 }
 .stores_table_headers{
     background-color: #1c9798;
