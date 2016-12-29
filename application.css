@@ -2243,7 +2243,7 @@ td.stores_pin{
     text-overflow-multiline: ellipsis;
     position: relative;
 }
-.blogpost h2{
+.blogpost h2 {
     padding-top: 15px;
     color: #000;
 }
@@ -2255,6 +2255,9 @@ td.stores_pin{
 }
 .blogpost img {
     max-width: 100%;
+}
+.blogpost ul {
+    margin: 0 0 10px 25px;
 }
 .blogpost_content{
     max-height:120px;
