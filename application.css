@@ -1818,7 +1818,11 @@ td.stores_pin{
     .bottom_nav .social_box{
         margin: 0 6%;
     }
-    
+    .bottom_nav .nav_site_map .site_map_cols {
+        column-count: 4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+    }
     .bottom_nav .nav_site_map .nav_site_map_link{
         -moz-column-count: 1;
         -moz-column-gap: 1.5em;
