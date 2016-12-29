@@ -767,7 +767,7 @@ a.btn-nav {
     padding-bottom: 10px;
     z-index: 900;
     position: absolute;
-    top: -36px;
+    top: 5px;
 }
 #centre_logo img {
     max-width: 95%;
@@ -2189,9 +2189,7 @@ td.stores_pin{
 .brand_nav{
     background-color: #6d6f71;
 }
-#centre_logo{
-    top: 5px;
-}
+
 .btn-nav{
     color:  black;  
 }
