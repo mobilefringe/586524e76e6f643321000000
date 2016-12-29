@@ -186,10 +186,10 @@
                         <button class="btn-nav" data-toggle="dropdown">GUEST SERVICES</button>                                                     
                         <ul class="dropdown-menu">                            
                             <li>
-                                <a class="nav_a" href='/stores' target='_self'><span>Guest Services</span></a>                                
+                                <a class="nav_a" href='/pages/marlborough-guest-services' target='_self'><span>Guest Services</span></a>                                
                             </li>
                             <li>
-                                <a class="nav_a" href='/map' target='_self'><span>Security</span></a>                                
+                                <a class="nav_a" href='/pages/marlborough-security' target='_self'><span>Security</span></a>                                
                             </li>
                         </ul>
                     </li> 
