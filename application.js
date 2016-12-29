@@ -12,7 +12,7 @@ function init() {
     renderHomeHours();
     
     var pathArray = window.location.pathname;
-    console.log();
+    console.log(pathArray);
     if(pathArray === "/home") {
         $("#welcome_message").show();
     }
