@@ -365,7 +365,7 @@ function renderPromotions(container, template, collection){
             val.image_url = store_details.store_front_url_abs;
         }
         else{
-            val.store_name = "Aberdeen Mall Kamloops";
+            val.store_name = "Marlborough Mall";
             // val.image_url = "";
         }
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
