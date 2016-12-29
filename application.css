@@ -2243,11 +2243,11 @@ td.stores_pin{
     text-overflow-multiline: ellipsis;
     position: relative;
 }
-.blog_page .blogpost h2{
+.blogpost h2{
     padding-top: 15px;
     color: #000;
 }
-.blog_page .blogpost h2 a {
+.blogpost h2 a {
     color: inherit;
 }
 .blogpost{
