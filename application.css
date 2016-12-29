@@ -1803,6 +1803,9 @@ td.stores_pin{
         width: 100%;
         margin-bottom: 10px;
     }
+    .long_feature_label {
+        top: 73%;
+    }
     .alphabet_bg .btn-secondary {
         padding: 0 2.25%;
     }
