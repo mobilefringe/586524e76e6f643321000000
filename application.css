@@ -2245,6 +2245,10 @@ td.stores_pin{
 }
 .blog_page .blogpost h2{
     padding-top: 15px;
+    color: #000;
+}
+.blog_page .blogpost h2 a {
+    color: inherit;
 }
 .blogpost{
     padding-right:10px;
