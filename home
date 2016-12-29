@@ -11,10 +11,6 @@
         </script>                
     </ul>        
 </div>
-<div class="line_break"></div>
-<div class="welcome_message">
-    <span>Welcome to Marlborough Mall!</span>    
-</div>
 <script>
     $(document).ready(function(e){
         init(e);
