@@ -2188,6 +2188,9 @@ td.stores_pin{
 .btn-nav{
     color:  black;  
 }
+.hour_box .check_hours {
+    color: #1c9798;
+}
 .feature_label, .long_feature_label {
     background-color: #1c9798;
 }
