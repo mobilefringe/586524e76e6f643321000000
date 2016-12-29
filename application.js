@@ -11,9 +11,8 @@ function init() {
 
     renderHomeHours();
     
-    var pathArray = window.location.pathname.split( '/' );
+    var pathArray = window.location.pathname;
     console.log(pathArray);
-    var slug = pathArray[pathArray.length-1];
     if(slug === "cornwall-contact-us") {
         $("#welcome_message").show();
     }
