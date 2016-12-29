@@ -1797,7 +1797,8 @@ td.stores_pin{
         height: auto;
     }
     
-    .long_feature_box{
+    .long_feature_box {
+        height: 138px;
         float: none;
         width: 100%;
         margin-bottom: 10px;
