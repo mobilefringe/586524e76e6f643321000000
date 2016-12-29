@@ -1032,31 +1032,16 @@ a.btn-prime {
     font-family: inherit;
     font-size: 2em;
     text-transform: uppercase;
-    // font-size: 1.3em\9;
-    // position:absolute;    
-    // left:0;
     z-index: 900;
     width: 100%;
 }
-
-// .hour_box .feature_label {
-//     top: -15px;
-// }
-
 .right_feature_box .feature_label {
     position: absolute;
     top: 0;
 }
-
-// .right_feature_box .feature_label{
-//     opacity:.9;
-// }
-
 .long_feature_box{
-    // float:left;
+    font-family:futura_condensed;
     overflow: hidden;
-    // width: 49.5%;
-    // margin-bottom: 10px;
 }
 
 .feature_boxes .long_feature_box:nth-child(2n-1){
