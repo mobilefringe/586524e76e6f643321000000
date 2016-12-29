@@ -79,7 +79,7 @@
                     </button>
                     <ul class="dropdown-menu bottom">                                
                         <li class="mobile_menu_header" >
-                            <a href='' >STORES</a>
+                            <a>STORES</a>
                         </li>
                         <li class="mobile_menu_item">
                             <a href='/stores'>Store Directory</a>
@@ -94,7 +94,7 @@
                             <a href='/events' >EVENTS</a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='' >GUEST SERVICES</a>
+                            <a>GUEST SERVICES</a>
                         </li>   
                         <li class="mobile_menu_item">
                             <a href='/pages/marlborough-guest-services'>Guest Services</a>
@@ -106,7 +106,7 @@
                             <a href='/jobs' >CAREERS</a>
                         </li>         
                         <li class="mobile_menu_header" >
-                            <a href='' >ABOUT US</a>
+                            <a>ABOUT US</a>
                         </li>
                         <li class="mobile_menu_item">
                             <a href='/hours'>Shopping Hours</a>
