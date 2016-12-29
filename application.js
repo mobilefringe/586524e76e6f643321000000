@@ -14,7 +14,7 @@ function init() {
     var feature_items = getFeatureList();
     var one_item = feature_items.slice(0,1);
     renderFeatureItems('#feature_item','#feature_item_template', one_item);
-    var two_items = feature_items;
+    var two_items = feature_items.slice(1,5);
     console.log(two_items);
     renderFeatureItems('#home_feature','#home_feature_template', two_items);
     
