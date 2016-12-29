@@ -2183,6 +2183,7 @@ td.stores_pin{
     background-color: #6d6f71;
 }
 #centre_logo{
+    top: 0;
     bottom:0px;
 }
 .btn-nav{
