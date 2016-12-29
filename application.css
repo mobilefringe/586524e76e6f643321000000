@@ -761,16 +761,15 @@ a.btn-nav {
     position: absolute;
     top: -36px;
 }
-
-
+#centre_logo img {
+    max-width: 95%;
+}
 .line_break{
     clear:both;
     height: 30px;
 }
 
-/*
-  Button Prime
-*/
+/* Button Prime */
 a.btn-prime {
   background-color: #b4b4b4;
   color:#FFFFFF;
