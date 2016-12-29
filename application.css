@@ -1826,7 +1826,7 @@ td.stores_pin{
     .bottom_nav .nav_site_map .nav_site_map_link .nav_sitemap_item{
         width: 16%;
         margin-right: .5%;
-        float:left;
+        // float:left;
     }
     .bottom_nav .nav_site_map .site_map_submenu{
         padding-left: 5px;
