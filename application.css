@@ -2207,7 +2207,7 @@ td.stores_pin{
     color:  black;  
 }
 
-.feature_label{
+.feature_label, .long_feature_label {
     background-color: #1c9798;
 }
 .long_feature_box {
