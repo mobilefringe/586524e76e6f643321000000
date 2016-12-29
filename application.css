@@ -2080,6 +2080,101 @@ td.stores_pin{
     margin: -4px 0 0;    
 }
 
+/* ***Property CSS *** */
+.brand_nav{
+    position: relative;
+    background-color: #3D441E;
+}
+
+.btn-nav{
+    color:  #3D441E; 
+}
+.store_details h1{
+    padding-bottom: 15px;
+    font-family:futura,futura_medium_light_ie;
+}
+.hour_box .check_hours {
+    color: #000;
+}
+.store_details h1 a {
+    text-decoration: none;
+}
+.store_details h1.store_page {
+    padding-top: 10px;
+}
+
+.stores_table_headers {
+    padding-top: 6px;
+    padding-left: 12px;
+    height: 36px;
+    text-align: left;
+    font-size: 14pt;
+}
+
+.controls{
+    background-color: #4d413e;
+}
+.store_desc{
+    padding: 20px 0px;
+    clear:both;
+    font-family: futura_medium_light,futura_medium_light_ie;
+}
+
+.store_desc p{
+    font-family: futura_medium_light,futura_medium_light_ie;  
+    color: #4c4c4c;    
+}
+
+
+.hour_info{
+    color: #808080;    
+}
+
+
+#site_nav ul li ul li a:hover {
+    background: #e5f5fd; 
+}
+
+.stores_table_headers .pull-right{
+    color: #ededed;
+}
+
+.stores_table_headers a {
+    text-decoration: none;
+}
+.stores_table_headers .pull-right .arrow-up{
+    border-bottom-color: #ededed;
+}
+
+.store_btn{
+    background-color:#A89968;   
+}
+.store_btn:hover {
+    text-decoration: none;
+}
+
+.blog-post .meta{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 15px;
+    background-color: #55a773;
+    background-color: rgba(85, 167, 115, 0.85);
+    color: #ccecd7;    
+}
+
+.bottom_nav .nav_site_map .nav_site_map_link{
+    overflow: auto\9;
+    column-count: 2;
+    text-align: justify;
+    -moz-column-count: 2;
+    -moz-column-gap: 1.5em;
+    -moz-column-rule: none;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1.5em;
+    -webkit-column-rule: none;
+    padding-bottom: 0px;
+}
 /* ***Property CSS*** */
 .nav_site_map_link {
     height: 250px;
@@ -2092,9 +2187,6 @@ td.stores_pin{
 }
 .btn-nav{
     color:  black;  
-}
-.hour_box .check_hours {
-    color: #1c9798;
 }
 .feature_label, .long_feature_label {
     background-color: #1c9798;
@@ -2112,66 +2204,51 @@ td.stores_pin{
 .controls{
     background-color: #4d413e;
 }
-
 .hour_title, .check_hours{
     color:#1c9798;
 }
-
-.hour_info{
+.hour_info {
     color:#6d6f71;    
 }
-
-#site_nav li button:focus{
+#site_nav li button:focus { 
     background-color: #e5f5fd;
 }
-
-#site_nav ul li ul li a:hover
-{
+#site_nav ul li ul li a:hover {
     background: #e5f5fd; 
 }
-
 .stores_table_headers .pull-right{
     color: #ededed;
 }
-
 .stores_table_headers .pull-right .arrow-up{
     border-bottom-color: #ededed;
 }
-
 .store_btn{
     background-color:#1c9798;   
 }
-
 .fb-like-box{
     border: solid 1px #315C99;
 }
-
 .blog_preview{
     display: none;
 }
-
 .blog_preview h2{
     color: #4D413E;
 }
-
 .blog_preview p.preview_text, .blogpost_content{
     max-height: 75px;
     overflow: hidden;
     text-overflow-multiline: ellipsis;
     position: relative;
 }
-
 .blog_page .blogpost h2{
     padding-top: 15px;
 }
-
 .blogpost{
     padding-right:10px;
 }
 .blogpost_content{
     max-height:120px;
 }
-
 .blog_preview p.preview_text .ellipsis{
     position: absolute;
     bottom: 0;
@@ -2182,17 +2259,12 @@ a.readmore:link, a.readmore:visited{
     display:block;
     text-align:right;
 }
-
-
-
 h5 {
     color: black;
 }
-
 .store_row_name a,.store_details h1{
     font-family: futura_condensed;
 }
-
 .store_details h1{
     text-transform:capitalize;
 }
