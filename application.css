@@ -912,24 +912,19 @@ a.btn-prime {
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
 /********* dropdown menu end *********/
-
 .accordion {
     margin-bottom: 20px;
 }
-
 .accordion-heading{
     height: 75px;
 }
-
 .accordion-heading .accordion-toggle {
     display: block;
     padding: 8px 15px;
 }
-
 .accordion-toggle {
     cursor: pointer;
 }
-
 .accordion-group h2{
     margin: 0;
     padding: 0 0 15px 0;
@@ -939,28 +934,23 @@ a.btn-prime {
     font-weight:lighter;
     color:#f57b2b;
 }
-
 .accordion-heading h2.job_title {
     padding: 10px 0 15px 0;
     color: #000;
 }
-
 .accordion-heading h2.job_title .store_name {
     text-transform: uppercase;
 }
-
 .accordion-heading h2.job_close_date {
     padding-top: 0;
     color: #ff0000;
     text-transform: uppercase;
 }
-
 .accordion-heading font{
     line-height:1.25em;
     text-align:right;
     float:right;
 }
-
 .accordion-group { 
     margin-bottom: 20px;
     padding-top: 2px;
@@ -969,12 +959,10 @@ a.btn-prime {
 	box-shadow: none;
     border-radius: 0;
 }
-
 .accordion-inner {
     padding: 9px 15px;
     border: 0px;
 }
-
 .accordion-inner ul {
     margin: 0 0 10px 25px;
     padding: 0;
@@ -998,7 +986,6 @@ a.btn-prime {
     border:none;
 	background-color: transparent;
 }
-
 .edit_btn{
     position: absolute;
     top:0px;
