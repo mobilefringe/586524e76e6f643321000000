@@ -918,8 +918,8 @@ a.btn-prime {
 }
 
 .accordion-heading{
-    height: 75px;
-    // height: auto;
+    // height: 75px;
+    height: auto;
 }
 
 .accordion-heading .accordion-toggle {
