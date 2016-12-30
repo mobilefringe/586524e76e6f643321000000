@@ -612,7 +612,7 @@ legend{
     margin-bottom: 0;
     display: inline-block;
     font-family: futura_medium;
-    font-weight: bold;
+    // font-weight: bold;
 }
 .stores_table_headers .pull-right {
     padding-top: 3px;
