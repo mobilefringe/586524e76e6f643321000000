@@ -607,7 +607,7 @@ legend{
     color: white;
     background-color: black;
 }
-.store_table_headers p {
+.stores_table_headers p {
     margin-bottom: 0;
     display: inline-block;
 }
