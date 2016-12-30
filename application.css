@@ -1966,7 +1966,7 @@ td.stores_pin{
     .stores_table_headers{
         padding-bottom: 6px;
         height: auto;
-        font-size: 13px;
+        // font-size: 13px;
     }
     .store_details h1.store_page {
         font-size: 30px;
