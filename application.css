@@ -2109,14 +2109,6 @@ td.stores_pin{
 .store_details h1.store_page {
     padding-top: 10px;
 }
-
-.stores_table_headers {
-    padding-top: 6px;
-    padding-left: 12px;
-    height: 36px;
-    text-align: left;
-}
-
 .controls{
     background-color: #4d413e;
 }
