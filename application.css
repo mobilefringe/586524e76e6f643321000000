@@ -1974,6 +1974,9 @@ td.stores_pin{
         font-size: 30px;
         
     }
+    .accordion-heading{
+        height: auto;
+    }
     .accordion-heading h2.job_title, 
     .accordion-heading h2.job_close_date{
         font-size: 1.4em;
