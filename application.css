@@ -2111,7 +2111,6 @@ td.stores_pin{
     padding-left: 12px;
     height: 36px;
     text-align: left;
-    font-size: 14pt;
 }
 
 .controls{
@@ -2200,8 +2199,6 @@ td.stores_pin{
 }
 .stores_table_headers{
     background-color: #1c9798;
-    height: auto;
-    padding-bottom: 6px;
 }
 .store_details h1 {
     text-transform: none !important;
