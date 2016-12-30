@@ -609,7 +609,7 @@ legend{
 }
 .stores_table_headers p {
     margin-bottom: 0;
-    display: inline;
+    display: inline-block;
     font-family: futura_medium;
     font-weight: bold;
 }
@@ -1912,13 +1912,6 @@ td.stores_pin{
     .hour_box .check_hours {
         color: #000;
     }
-    // .hour_box .feature_label {
-    //     padding: 13px 20px 0;
-    //     top: -10px;
-    // }
-    // .hour_box div{
-    //     padding-top: 25px;
-    // }
     .hour_box p{
         margin: 10px 0 0;
         padding-left: 20px;
@@ -1959,6 +1952,9 @@ td.stores_pin{
         text-align: left;
         height: auto;
         padding: 5px;
+    }
+    .stores_table_headers p {
+        width: 68%;
     }
     .store_row_name a {
         font-size: 18px;
