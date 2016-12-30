@@ -918,8 +918,7 @@ a.btn-prime {
 }
 
 .accordion-heading{
-    // height: 75px;
-    height: auto;
+    height: 75px;
 }
 
 .accordion-heading .accordion-toggle {
@@ -1974,7 +1973,7 @@ td.stores_pin{
         font-size: 30px;
         
     }
-    .accordion-heading{
+    .accordion-heading {
         height: auto;
     }
     .accordion-heading h2.job_title, 
