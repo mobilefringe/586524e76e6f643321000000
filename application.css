@@ -1455,11 +1455,9 @@ hr{
     height: auto;
     background: url(/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994) no-repeat scroll 95% 40% / 14px 10px white;
 }
-
 .controls a:hover{
     background: url(/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994) no-repeat scroll 95% 40% / 14px 10px white;
 }
-
 .mapper {
     margin-top: 32px;
     margin-bottom: 10px;
@@ -1471,7 +1469,6 @@ hr{
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
-
 #zoom_container .landmarks {
     position: absolute;
     z-index: 10;
@@ -1482,11 +1479,9 @@ hr{
     color: #ffffff;
     text-align: center;
 }
-
 #zoom_container .landmarks .mark {
     background-color: transparent;
 }
-
 #zoom_container .landmarks .mark .text {
     margin-bottom: 5px;
     padding: 2px 6px;
@@ -1494,7 +1489,6 @@ hr{
     border-radius: 4px;
     text-align: center;
 }
-
 #store_table{
     background-color: #e0dac4; 
     opacity: 1;
@@ -1504,7 +1498,6 @@ hr{
     top: 34px;
     left: 0px;
 }
-
 td.stores_pin{
     text-align:right;
 }
