@@ -1789,7 +1789,7 @@ td.stores_pin{
     }
     
     .long_feature_box {
-        min-height: 137px;
+        max-height: 137px;
         height: auto;
         float: none;
         width: 100%;
