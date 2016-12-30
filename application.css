@@ -2214,6 +2214,8 @@ td.stores_pin{
 }
 .stores_table_headers{
     background-color: #1c9798;
+    height: auto;
+    padding-bottom: 6px;
 }
 .store_details h1 {
     text-transform: none !important;
