@@ -609,7 +609,7 @@ legend{
 }
 .stores_table_headers p {
     margin-bottom: 0;
-    display: inline-block;
+    display: inline;
 }
 .stores_table_headers .pull-right {
     padding-top: 3px;
