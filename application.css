@@ -607,7 +607,10 @@ legend{
     color: white;
     background-color: black;
 }
-
+.store_table_headers p {
+    margin-bottom: 0;
+    display: inline-block;
+}
 .stores_table_headers .pull-right {
     padding-top: 3px;
     padding-right: 10px;
