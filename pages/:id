@@ -12,6 +12,9 @@
         <div class="line_break"></div>    
     </div>
     <div id="page_body"></div>
+    <div id="contact_form" class="hidden_now">
+        
+    </div>
 </div>
 <div class="mobile_line_break"></div>
 <script>
@@ -26,6 +29,7 @@
                 $('#page_body').html(data.body);
                 if(slug === "marlborough-contact-us") {
                     $("#contact_us").show();
+                    $("#contact_form").show();
                 }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
