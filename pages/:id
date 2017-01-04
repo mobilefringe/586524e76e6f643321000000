@@ -2,6 +2,22 @@
     #error_msg {
         text-align: center;
     }
+.contact-inputs{
+        width: 80%;    
+
+    }
+    .span6{
+        margin: 0;
+    }
+    textarea{
+        margin-bottom:20px;
+        width: 80%; 
+        height:200px; 00
+        resize:none;
+}
+    .g-recaptcha{
+        margin-bottom: 20px;
+
 </style>
 <div class="page_body">
     <h1 class="page_title" id="page_title"></h1>
@@ -13,8 +29,8 @@
     </div>
     <div id="page_body"></div>
     <div id="contact_form" class="hidden_now">
-       <script src='https://www.google.com/recaptcha/api.js'></script>
-        <form id="msg-contact" accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tupht/"  enctype="multipart/form-data"  method="post">
+
+        <form id="msg-contact" accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tupht/"  enctype="multipart/form-data"  method="post"><form id="msg-contact" accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tupht/"  enctype="multipart/form-data"  method="post">
             <input id="cm-name" type="hidden" name="cm-name" />
             <div class="row-fluid" style="margin-top:15px;">
                 <div class="span3">
@@ -64,14 +80,19 @@
             
             <div class="line_break">&nbsp;</div>
             <!-- Captcha END -->
-        </form>
+    
     </div>
 </div>
-<div class="mobile_line_break"></div>
-<script>
-    $(document).ready(function(){
+<div class="mobile_line_break"></div>     
+
+
+
+
+
+
+
+   init(e);
         function renderAll(){
-            init();
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var pages_json = "//www.marlboroughmall.com/pages/" + slug + ".json"
