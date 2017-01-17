@@ -13,8 +13,8 @@
 </div>
 <script>
     $(document).ready(function(e){
-        init(e);
         function renderAll(){
+            init();
             var banners = getBanners();
             renderBanner('#home_banner_template','#home_banner', banners);
 
