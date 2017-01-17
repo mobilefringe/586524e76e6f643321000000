@@ -12,7 +12,7 @@
     </ul>        
 </div>
 <script>
-    $(document).ready(function(e){
+    $(document).ready(function(){
         function renderAll(){
             init();
             var banners = getBanners();
