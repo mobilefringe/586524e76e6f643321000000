@@ -94,25 +94,30 @@
 
 
 
+<script>
+$(document).ready(function(){
+    function renderAll(){
+        init();
+        
+        var prop_details = getPropertyDetails();
+        renderPropertyDetails('#map_container', '#map_template', prop_details);
 
-   init(e);
-        function renderAll(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            var pages_json = "//www.marlboroughmall.com/pages/" + slug + ".json"
-            $.getJSON(pages_json).done(function(data) {
-                $('#page_title').html(data.title);
-                $('#page_body').html(data.body);
-                if(slug === "marlborough-contact-us") {
-                    $("#contact_us").show();
-                    $("#contact_form").show();
-                }
-            }).fail(function(jqXHR) {
-                if (jqXHR.status == 404) {
-                    $("#error_msg").fadeIn("fast");
-                }
-            }); 
-        }
-        loadMallDataCached(renderAll); 
-    })
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var pages_json = "//www.marlboroughmall.com/pages/" + slug + ".json"
+        $.getJSON(pages_json).done(function(data) {
+            $('#page_title').html(data.title);
+            $('#page_body').html(data.body);
+            if(slug === "marlborough-contact-us") {
+                $("#contact_us").show();
+                $("#contact_form").show();
+            }
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#error_msg").fadeIn("fast");
+            }
+        }); 
+    }
+    loadMallDataCached(renderAll); 
+});
 </script>
