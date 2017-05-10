@@ -16,7 +16,7 @@ function init() {
     
     var pathArray = window.location.pathname;
     console.log(pathArray)
-    if (pathArray === "/" || "/home") {
+    if (pathArray == "/" || "/home") {
         $("#welcome_message").show();
     }
     
