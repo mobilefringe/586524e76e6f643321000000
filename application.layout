@@ -282,8 +282,8 @@
         </div>
     </div>
     <div class="line_break"></div>
-    <div id="welcome_message" class="trim_screen hidden_now">
-        <div class="welcome_message">
+    <div id="welcome_message" class="hidden_now">
+        <div class="trim_screen welcome_message">
             <span>Welcome to Marlborough Mall!</span>    
         </div>
         <div class="line_break"></div>
