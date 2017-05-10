@@ -1512,7 +1512,9 @@ td.stores_pin{
 #contest_form .form-control {
     margin-top: 5px;
     margin-bottom: 25px;
+    padding: 4px 6px;
     width: 100%;
+    height: 40px;
 }
 #contest_form input#age{
     width:35px;
