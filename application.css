@@ -1507,7 +1507,6 @@ td.stores_pin{
     font-weight:500;
 }
 #contest_form input {
-    max-width:300px;
     width: 100%;
 }
 #contest_form input#postal_code{
