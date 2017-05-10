@@ -57,7 +57,7 @@
                         </label>
                         <label class="agree contest_rules">
                             <input id="agree_terms" type="checkbox" name="contest[rules]" required data-validation="required" tabindex="9"/> 
-                            I have read and am in full compliance with the official contest <a href="" target="_blank">rules and regulations</a>.
+                            I have read and am in full compliance with the official contest <a href="/pages/marlborough-rules-and-regulations" target="_blank">rules and regulations</a>.
                         </label>
                     </div>
                 </div>
