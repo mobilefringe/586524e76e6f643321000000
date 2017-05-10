@@ -1,9 +1,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-<div>
+<div class="contest_page">
     <div class="" id="contest_container">
         <script id="contest_template" type="x-tmpl-mustache/text">
             <img src="{{alt_photo_url}}" class="details_image"/>
-            <div id="contest_description">{{{rich_description}}}</div>
+            <div class="contest_description">{{{rich_description}}}</div>
             <hr>
             <form id="contest_form">
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
