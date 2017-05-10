@@ -1509,9 +1509,6 @@ td.stores_pin{
 #contest_form input {
     width: 100%;
 }
-#contest_form input#postal_code{
-    width:65px;
-}
 #contest_form input#age{
     width:35px;
 }
