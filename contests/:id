@@ -2,8 +2,8 @@
 <div>
     <div class="" id="contest_container">
         <script id="contest_template" type="x-tmpl-mustache/text">
-            <img src="{{alt_photo_url}}" class="details_image" style="{{promo_image}}" />
-            <div class="details_desc margin_30">{{{rich_description}}}</div>
+            <img src="{{alt_photo_url}}" class="details_image"/>
+            <div id="contest_description">{{{rich_description}}}</div>
             <hr>
             <form id="contest_form">
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
