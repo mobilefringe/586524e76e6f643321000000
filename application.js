@@ -14,11 +14,11 @@ function init() {
     var prop_details = getPropertyDetails();
     renderPropertyDetails('#prop_phone_container', '#prop_phone_template', prop_details);
     
-    // var pathArray = window.location.pathname;
-    // console.log(pathArray)
-    // if (pathArray == "/" || "/home") {
-    //     $("#welcome_message").show();
-    // }
+    var pathArray = window.location.pathname;
+    console.log(pathArray)
+    if (pathArray == "/" || "/home") {
+        $("#welcome_message").show();
+    }
     
     var feature_items = getFeatureList();
     var one_item = feature_items.slice(0,1);
