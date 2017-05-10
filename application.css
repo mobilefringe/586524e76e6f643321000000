@@ -1522,6 +1522,10 @@ td.stores_pin{
     margin-bottom: 0;
     font-size: 12px;
 }
+.contest_btn {
+    width: 130px;
+    height: 35px;
+}
 /******** pages **********/
 .page_body h1{
     padding-top: 0px;
