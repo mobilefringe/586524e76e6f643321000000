@@ -14,6 +14,7 @@ function init() {
     var prop_details = getPropertyDetails();
     renderPropertyDetails('#prop_phone_container', '#prop_phone_template', prop_details);
     
+    $("#welcome_message").hide();
     var pathArray = window.location.pathname;
     console.log(pathArray)
     if (pathArray == "/" || "/home") {
