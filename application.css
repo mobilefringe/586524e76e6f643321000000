@@ -2052,7 +2052,7 @@ td.stores_pin{
 #contest_form_20vic .contest_checkbox{
     font-size: 10pt;    
 }
-.contest_page #contest_description{
+.contest_page .contest_description{
     font-size: 16pt;
     color: #6D6F71;
     font-family: futura_medium;  
