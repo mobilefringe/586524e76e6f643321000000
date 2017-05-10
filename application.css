@@ -1521,6 +1521,10 @@ td.stores_pin{
     font-family: futura_medium_light, Helvetica, sans-serif;
     font-size: 16px;
 }
+#contest_form label.agree_msg a {
+    color: inherit;
+    text-decoration: underline;
+}
 .help-block{
     margin-top: -20px;
     margin-bottom: 0;
