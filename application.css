@@ -2058,7 +2058,9 @@ td.stores_pin{
     font-family: futura_medium;  
     padding: 15px 5px 10px 5px;
 }
-
+.contest_page img {
+    max-width: 100%;
+}
 #agree_terms{
     margin: -4px 0 0;    
 }
