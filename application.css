@@ -1509,7 +1509,7 @@ td.stores_pin{
     line-height: 20px;
     font-family: futura_medium_light, Helvetica, sans-serif;
 }
-#contest_form .form_control {
+#contest_form .form-control {
     margin-top: 5px;
     margin-bottom: 25px;
     width: 100%;
