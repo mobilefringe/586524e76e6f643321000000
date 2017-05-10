@@ -98,33 +98,21 @@
 </div>
 
 <script>
-    $(document).ready(function(e){
-        init(e);
-        
+    $(document).ready(function(){
         function renderAll(){
+            init();
+            
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
-            var contest_details = getContestBySlug(slug);
-            renderContest("#contest_container", "#contest_template", contest_details);
-            
-            if(Cookies.get('current_locale')== "en-CA"){
-                $("#english_contest").show();  
-            }
-            if(Cookies.get('current_locale') == "fr-CA"){
-                $("#french_contest").show(); 
-            }
-            
-            setTimeout(function() {
-                show_content();
-            }, 500);
+            contest_details = getContestBySlug(slug);
+            renderContest("#contest_details_container", '#contest_details_template', contest_details)
             
             $.validate();
             $('#contest_form').submit(function(e){
                 e.preventDefault();
                 $('.contest_btn').prop('disabled', true);
                 submit_contest(slug);
-            })
-            
+            });
         }
         loadMallDataCached(renderAll);
     });
