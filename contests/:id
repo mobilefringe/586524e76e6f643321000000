@@ -35,14 +35,19 @@
                     </div>
                 </div>
                 <div class="row ">
+                    <div class="col-md-3 margin_30">
+                        <label for="postal_code">*Postal Code</label> 
+                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required"/>
+                    </div>
+                    <div class="col-md-3 margin_30">
+                        <label for="phone_number">*Telephone</label>  
+                        <input class="form-control" id="phone_number" name="contest[phone]" type="text" required data-validation="required"/>
+                    </div>
                     <div class="col-md-6 margin_30">
-                        <label for="email">Email *</label> 
+                        <label for="email">*Email</label> 
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
                     </div>
-                    <div class="col-md-6 margin_30">
-                        <label for="phone_number">Phone Number</label>  
-                        <input class="form-control" id="phone_number" name="contest[phone]" type="text"  />
-                    </div>
+                    
                 </div>
                 <div class="row ">
                     <div class="col-md-4 margin_30">
