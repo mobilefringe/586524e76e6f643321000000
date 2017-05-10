@@ -1519,6 +1519,7 @@ td.stores_pin{
 }
 .agree_msg {
     font-family: futura_medium_light, Helvetica, sans-serif;
+    font-size: 16px;
 }
 .help-block{
     margin-top: -20px;
