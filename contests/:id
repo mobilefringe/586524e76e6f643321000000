@@ -1,99 +1,76 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-<div class="content_space">
-    <div id="contest_container">
-	    <script id="contest_template" type="x-tmpl-mustache/text">
-            <div id="english_contest" class="hidden_now">
-                <h1 id="page_title">{{name}}</h1>
-                <img id="page_image" alt="Contest Image" src="//www.mallmaverick.com/{{photo_url}}"/>
-                <div class="contest_description"> {{{rich_description}}}</div>
-            </div>
-            <div id="french_contest" class="hidden_now">
-                <h1 id="page_title">{{name_2}}</h1>
-                <img id="page_image" alt="Contest Image" src="//www.mallmaverick.com/{{photo_url_2}}"/>
-                <div class="contest_description"> {{{rich_description_2}}}</div>
-            </div>
-            <br/>
-            <br/>
-            <form id="contest_form" enctype="multipart/form-data">
-                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
-                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
-                <input type="hidden" name="cm-name" id="cm-name" />
+<div class="header_banner events_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Contest</h4>
+    </div>
+</div>
+<div class="main_container mobile_padding">
+    <div class="details_row">
+        <div class="details_col_3 hidden_phone">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f3bee46e6f643959000000/image/jpeg/undefined/dgvr_440x1200_side_events.jpg" />
+        </div>
+        <div class="details_col_9" id="contest_details_container">
+            <script id="contest_details_template" type="x-tmpl-mustache/text">
+                <img src="{{alt_photo_url}}" class="details_image" style="{{promo_image}}" />
+                <p class="colored_link">{{name}}</p>
+                <div class="details_desc margin_30">{{{rich_description}}}</div>
                 
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label for="first_name" data-i18n="pages.contest_firstname">*First Name</label>
-                        <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                <form id="contest_form">
+                    <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                    <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                    <input type="hidden" name="cm-name" id="cm-name" />
+                    <div class="row ">
+                        <div class="col-md-6 margin_30">
+                            <label for="first_name">First Name *</label>  
+                            <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required"  />
+                        </div>
+                        <div class="col-md-6 margin_30">
+                            <label for="last_name">Last Name *</label>  
+                            <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" />
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <label for="last_name" data-i18n="pages.contest_lastname">*Last Name</label>
-                        <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                    <div class="row ">
+                        <div class="col-md-6 margin_30">
+                            <label for="email">Email *</label> 
+                            <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
+                        </div>
+                        <div class="col-md-6 margin_30">
+                            <label for="phone_number">Phone Number</label>  
+                            <input class="form-control" id="phone_number" name="contest[phone]" type="text"  />
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label for="email" data-i18n="pages.contest_email">*Email</label>
-                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    <div class="row ">
+                        <div class="col-md-4 margin_30">
+                            <label for="postal_code">Zip Code</label> 
+                            <input class="form-control" id="postal_code" name="contest[postal_code]" type="text"  />
+                        </div>
+                        <div class="col-md-2 margin_30">
+                            <label for="age">Age</label> 
+                            <input class="form-control" id="age" name="contest[age]" type="text"  />
+                        </div>
+                        <div class="col-md-6 margin_30">
+                            <label for="gender">Gender</label>  
+                            <select class="form-control" id="gender" name="contest[gender]">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <label for="phone_number" data-i18n="pages.contest_phone">*Phone Number</label>
-                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" tabindex="4"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">  
-                        <label for="postal_code" data-i18n="pages.contest_postalcode">*Postal Code</label>
-                        <input class="contest_info" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="5"/>
-                    </div>
-                    <div class="col-sm-6"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6"> 
-                        <label for="age" data-i18n="pages.contest_age">Age</label>
-                        <input class="contest_info" id="age" name="contest[age]" type="text" tabindex="6"/>
-                    </div>
-                    <div class="col-sm-6">  
-                        <label for="gender" data-i18n="pages.contest_gender">Gender</label>
-                        <select class="contest_info" id="gender" name="contest[gender]" tabindex="7">
-                            <option value="" data-i18n="pages.gender_choose"></option>
-                            <option value="female" data-i18n="pages.gender_female"></option>
-                            <option value="male" data-i18n="pages.gender_male"></option>
-                        </select>
-                    </div>
-                </div>
-                <div class="line_break">&nbsp;</div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <button class="btn btn-success contest_btn" style="width:100%; height: 45px;" tabindex="10" data-i18n="pages.contest_submit">Submit</button>
-                    </div>
-                    <div class="col-sm-6"></div>
-                </div>
-                <div class="line_break">&nbsp;</div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div>
+                    <div class="row">
+                        <div class="col-md-12 margin_30">
                             <label>
-                                <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="8"/> 
-                                <span data-i18n="pages.contest_subscribe"></span>{{property_name}}<span data-i18n="pages.contest_newsletter"></span>
+                                <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
+                                I agree to receive newsletters from {{property_name}}. You can unsubscribe anytime.
                             </label>
+                            <p>For more details about personal privacy, please read our <a href="/pages/costamesa-privacy-policy" target="_blank">Privacy Policy.</a></p>
+                            <button class="main_btn animated_btn contest_btn">Submit</button>
+                            <br /><br />
+                            <p class="" id="succes_msg" style="display:none">Thank you! Your entry have been received.</p>
                         </div>
-                        <div>
-                            <label class="contest_rules">
-                                <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
-                                <span data-i18n="pages.contest_rules"></span>
-                            </label>
-                        </div>
-                        <a href="" target="_blank" data-i18n="pages.contest_ruleslink">Contest Rules & Regulations</a> | <a href="" target="_blank" data-i18n="pages.contest_privacy">Privacy Policy</a>
                     </div>
-                </div>
-                <div class="line_break">&nbsp;</div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="hidden_now" id="succes_msg" data-i18n="pages.contest_sucess">Thank you! Your entry has been received.</p>
-                    </div>
-                    <div class="col-sm-6">
-                </div>
-            </form>
-        </script>
+                </form>
+            </script>
+        </div>
     </div>
 </div>
 
