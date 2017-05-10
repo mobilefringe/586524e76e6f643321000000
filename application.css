@@ -1517,6 +1517,9 @@ td.stores_pin{
 #contest_form input#age{
     width:35px;
 }
+.agree_msg {
+    font-family: futura_medium_light, Helvetica, sans-serif;
+}
 .help-block{
     margin-top: -20px;
     margin-bottom: 0;
