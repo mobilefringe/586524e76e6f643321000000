@@ -48,7 +48,7 @@
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
                     </div>
                 </div>
-                <br>
+                <br/>
                 <div class="row">
                     <div class="col-md-12 margin_30">
                         <label>
@@ -61,6 +61,7 @@
                         </label>
                     </div>
                 </div>
+                <br/>
                 <div class="row">
                     <div class="col-md-12 margin_30">
                         <button class="main_btn animated_btn contest_btn">Submit</button>
