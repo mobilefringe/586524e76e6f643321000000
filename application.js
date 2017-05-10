@@ -15,7 +15,6 @@ function init() {
     renderPropertyDetails('#prop_phone_container', '#prop_phone_template', prop_details);
     
     var pathArray = window.location.pathname;
-    console.log(pathArray)
     if (pathArray == "/") {
         $("#welcome_message").show();
     }
