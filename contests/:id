@@ -1,0 +1,163 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<div class="content_space">
+    <div id="contest_container">
+	    <script id="contest_template" type="x-tmpl-mustache/text">
+            <div id="english_contest" class="hidden_now">
+                <h1 id="page_title">{{name}}</h1>
+                <img id="page_image" alt="Contest Image" src="//www.mallmaverick.com/{{photo_url}}"/>
+                <div class="contest_description"> {{{rich_description}}}</div>
+            </div>
+            <div id="french_contest" class="hidden_now">
+                <h1 id="page_title">{{name_2}}</h1>
+                <img id="page_image" alt="Contest Image" src="//www.mallmaverick.com/{{photo_url_2}}"/>
+                <div class="contest_description"> {{{rich_description_2}}}</div>
+            </div>
+            <br/>
+            <br/>
+            <form id="contest_form" enctype="multipart/form-data">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input type="hidden" name="cm-name" id="cm-name" />
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="first_name" data-i18n="pages.contest_firstname">*First Name</label>
+                        <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="last_name" data-i18n="pages.contest_lastname">*Last Name</label>
+                        <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="email" data-i18n="pages.contest_email">*Email</label>
+                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="phone_number" data-i18n="pages.contest_phone">*Phone Number</label>
+                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" tabindex="4"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">  
+                        <label for="postal_code" data-i18n="pages.contest_postalcode">*Postal Code</label>
+                        <input class="contest_info" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="5"/>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6"> 
+                        <label for="age" data-i18n="pages.contest_age">Age</label>
+                        <input class="contest_info" id="age" name="contest[age]" type="text" tabindex="6"/>
+                    </div>
+                    <div class="col-sm-6">  
+                        <label for="gender" data-i18n="pages.contest_gender">Gender</label>
+                        <select class="contest_info" id="gender" name="contest[gender]" tabindex="7">
+                            <option value="" data-i18n="pages.gender_choose"></option>
+                            <option value="female" data-i18n="pages.gender_female"></option>
+                            <option value="male" data-i18n="pages.gender_male"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-success contest_btn" style="width:100%; height: 45px;" tabindex="10" data-i18n="pages.contest_submit">Submit</button>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div>
+                            <label>
+                                <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="8"/> 
+                                <span data-i18n="pages.contest_subscribe"></span>{{property_name}}<span data-i18n="pages.contest_newsletter"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="contest_rules">
+                                <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
+                                <span data-i18n="pages.contest_rules"></span>
+                            </label>
+                        </div>
+                        <a href="" target="_blank" data-i18n="pages.contest_ruleslink">Contest Rules & Regulations</a> | <a href="" target="_blank" data-i18n="pages.contest_privacy">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="hidden_now" id="succes_msg" data-i18n="pages.contest_sucess">Thank you! Your entry has been received.</p>
+                    </div>
+                    <div class="col-sm-6">
+                </div>
+            </form>
+        </script>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        
+        function renderPage(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var contest_details = getContestBySlug(slug);
+            renderContest("#contest_container", "#contest_template", contest_details);
+            
+            if(Cookies.get('current_locale')== "en-CA"){
+                $("#english_contest").show();  
+            }
+            if(Cookies.get('current_locale') == "fr-CA"){
+                $("#french_contest").show(); 
+            }
+            
+            setTimeout(function() {
+                show_content();
+            }, 500);
+            
+            $.validate();
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.contest_btn').prop('disabled', true);
+                submit_contest(slug);
+            })
+            
+        }
+        loadMallDataCached(renderPage);
+    });
+    
+    function submit_contest(slug) {
+        var contest_entry = {};
+        var contest_data = {};
+        contest_data.first_name = $('#first_name').val();
+        contest_data.last_name = $('#last_name').val();
+        contest_data.email = $('#email').val();
+        contest_data.phone = $('#phone_number').val();
+        contest_data.postal_code = $('#postal_code').val();
+        contest_data.age = $('#age').val();
+        contest_data.gender = $('#gender').val();
+        contest_data.newsletter = $('#newsletter_signup').prop("checked");
+        
+        contest_entry.contest = contest_data;
+        
+        var propertyDetails = getPropertyDetails();
+        var host = propertyDetails.mm_host.replace("http:", "");
+        var action = host + "/contests/" + slug + "/create_js_entry"
+        $.ajax({
+            url : action,
+            type: "POST",
+            data : contest_entry,
+            success: function(data){
+               $('#succes_msg').show();
+               $('.contest_btn').prop('disabled', false);
+               $('#contest_form').trigger('reset');
+            },
+            error: function (data){
+                alert('An error occured while processing your request. Please try again later!')
+            }
+        });
+    }
+</script>
