@@ -1504,7 +1504,8 @@ td.stores_pin{
 
 /********* contest form *********/
 #contest_form label{
-    font-weight:500;
+    font-weight: normal;
+    font-family: futura_medium_light, Helvetica, sans-serif;
 }
 #contest_form input {
     width: 100%;
