@@ -66,6 +66,10 @@ function init() {
                     $('#subForm').trigger('reset');
                     $("#success_subscribe").fadeIn();
                     
+                    setTimeout(function(){ 
+                        $(".modal-backdrop").remove();
+	                    $(".popup_home").remove();
+                    }, 2000);
                 }
         });
     });
