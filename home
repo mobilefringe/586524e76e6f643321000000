@@ -19,7 +19,7 @@
                             <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Marlborough Mall
                         </label>
                         <br/> 
-                        <button class="btn"/>Subscribe</button>                      
+                        <button class="btn btn-success"/>Subscribe</button>                      
                         <br/><br/>
                         <span id="success_subscribe">Thank you for subscribing to our newsletter.</span>
                     </form>
