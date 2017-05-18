@@ -108,18 +108,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 margin_30">
+                    <div class="col-md-6 margin_30">
                         <label>Parent/Guardian Name</label> 
                         <input type="text" id="notes" name="contest[notes]" value="" required data-validation="required"/>
                     </div>
-                    <div class="col-md-3 margin_30">
+                    <div class="col-md-6 margin_30"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 margin_30">
                         <label for="phone">*Telephone</label>  
                         <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required"/>
                     </div>
+                    <div class="col-md-6 margin_30"></div>
+                </div>
+                <div class="row">
                     <div class="col-md-6 margin_30">
                         <label for="email">*Email</label> 
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
                     </div>
+                    <div class="col-md-6 margin_30"></div>
                 </div>
                 <br/>
                 <div class="row">
