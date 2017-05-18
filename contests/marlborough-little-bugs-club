@@ -17,7 +17,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 margin_30">
-                        <label>Little Bugs Age</label> 
+                        <label for="age">Little Bugs Age</label> 
                         <input class="form-control" type="text" id="age" name="contest[age]" value="" required data-validation="required"/>
                     </div>
                     <div class="col-md-6 margin_30"></div>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 margin_30">
-                        <label for="email">*Email</label> 
+                        <label for="email">Email</label> 
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
                     </div>
                     <div class="col-md-6 margin_30"></div>
@@ -151,15 +151,7 @@
         <br/>
         <label>Little Bugs Age</label> 
         <input type="text" id="age" name="contest[age]" value="" />
-        <br/>
 
-        
-        <label>Phone Number</label>  
-        <input type="text" id="phone" name="contest[phone]" value="" />
-        <br/>
-        <label>Email</label> 
-        <input type="text" id="email" name="contest[email]" value="" />
-        <br/>
         <div class="line_break">&nbsp;</div>
         <input class="btn btn-success" name="commit" type="submit" value="Join Little Bug Club" style="width:325px; height: 45px;" />        
     </form>
