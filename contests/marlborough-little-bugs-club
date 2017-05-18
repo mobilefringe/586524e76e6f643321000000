@@ -3,7 +3,7 @@
     <div id="contest_container">
         <script id="contest_template" type="x-tmpl-mustache/text">
             <div class="contest_description">{{{rich_description}}}</div>
-            <h1 class="page_title">{{name}}</h1>
+            <h1 class="page_title">Little Bugs Club - Signup</h1>
             <form id="contest_form">
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
                 <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
