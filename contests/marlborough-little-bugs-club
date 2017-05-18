@@ -129,20 +129,7 @@
                     <div class="col-md-6 margin_30"></div>
                 </div>
                 <br/>
-                <div class="row">
-                    <div class="col-md-12 margin_30">
-                        <label class="agree_msg">
-                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
-                            I agree to receive communications from {{property_name}}. You can unsubscribe at anytime. For more details about personal data privacy, please read our <a href="/pages/marlborough-privacy-policy" target="_blank">Privacy Policy</a>.
-                        </label>
-                        <br/><br/>
-                        <label class="agree_msg agree contest_rules">
-                            <input id="agree_terms" type="checkbox" name="contest[rules]" required data-validation="required" tabindex="9"/> 
-                            I have read and am in full compliance with the official contest <a href="/pages/marlborough-rules-and-regulations" target="_blank">rules and regulations</a>.
-                        </label>
-                    </div>
-                </div>
-                <br/>
+                
                 <div class="row">
                     <div class="col-md-12 margin_30">
                         <button class="btn btn-primary contest_btn">Submit</button>
