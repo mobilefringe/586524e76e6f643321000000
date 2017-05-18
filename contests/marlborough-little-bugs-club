@@ -116,7 +116,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 margin_30">
-                        <label for="phone">*Telephone</label>  
+                        <label for="phone">Phone Number</label>  
                         <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required"/>
                     </div>
                     <div class="col-md-6 margin_30"></div>
@@ -166,9 +166,7 @@
         <input type="text" id="age" name="contest[age]" value="" />
         <br/>
 
-        <label>Parent/Guardian Name</label> 
-        <input type="text" id="notes" name="contest[notes]" value="" />
-        <br/>
+        
         <label>Phone Number</label>  
         <input type="text" id="phone" name="contest[phone]" value="" />
         <br/>
