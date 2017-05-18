@@ -2082,6 +2082,9 @@ td.stores_pin{
 .contest_page img {
     max-width: 100%;
 }
+.contest_page select {
+    width: 100%;
+}
 #agree_terms{
     margin: -4px 0 0;    
 }
