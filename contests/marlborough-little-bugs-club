@@ -9,25 +9,25 @@
                 <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
                 <input type="hidden" name="cm-name" id="cm-name" />
                 <div class="row">
-                    <div class="col-md-6 margin_30">
+                    <div class="col-md-6">
                         <label for="first_name">Little Bugs Name</label>  
                         <input class="form-control" type="text" id="first_name" name="contest[first_name]" value="" required data-validation="required"/>
                     </div>
-                    <div class="col-md-6 margin_30"></div>
+                    <div class="col-md-6"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 margin_30">
+                    <div class="col-md-6">
                         <label for="age">Little Bugs Age</label> 
                         <input class="form-control" type="text" id="age" name="contest[age]" value="" required data-validation="required"/>
                     </div>
-                    <div class="col-md-6 margin_30"></div>
+                    <div class="col-md-6"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 margin_30">
+                    <div class="col-md-12">
                         <label>Little Bugs Birthday</label> 
                         <input type="text" id="birthday" name="contest[birthday]" value="" class="date" style="display:none;"/>
                     </div>
-                    <div class="col-md-4 margin_30">
+                    <div class="col-md-4">
                         <select id="birthday_year">
                             <option value="">Year</option>
                             <option value="2017">2017</option>
@@ -55,7 +55,7 @@
                             <option value="1995">1995</option>
                         </select>    
                     </div>
-                    <div class="col-md-4 margin_30">
+                    <div class="col-md-4">
                         <select id="birthday_month">
                             <option value="">Month</option>
                             <option value="Jan">Jan</option>
@@ -72,7 +72,7 @@
                             <option value="Dec">Dec</option>
                         </select>
                     </div>
-                    <div class="col-md-4 margin_30">
+                    <div class="col-md-4">
                         <select id="birthday_day">
                             <option value="">Day</option>
                             <option value="1">1</option>
@@ -110,30 +110,30 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 margin_30">
+                    <div class="col-md-6">
                         <label for="notes">Parent/Guardian Name</label> 
                         <input class="form-control" type="text" id="notes" name="contest[notes]" value="" required data-validation="required"/>
                     </div>
-                    <div class="col-md-6 margin_30"></div>
+                    <div class="col-md-6"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 margin_30">
+                    <div class="col-md-6">
                         <label for="phone">Phone Number</label>  
                         <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required"/>
                     </div>
-                    <div class="col-md-6 margin_30"></div>
+                    <div class="col-md-6"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 margin_30">
+                    <div class="col-md-6">
                         <label for="email">Email</label> 
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
                     </div>
-                    <div class="col-md-6 margin_30"></div>
+                    <div class="col-md-6"></div>
                 </div>
                 <br/>
                 
                 <div class="row">
-                    <div class="col-md-12 margin_30">
+                    <div class="col-md-12">
                         <input class="btn btn-success" name="commit" type="submit" value="Join Little Bug Club" style="width:325px; height: 45px;"/> 
                         <br /><br />
                         <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
