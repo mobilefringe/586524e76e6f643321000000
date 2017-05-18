@@ -147,8 +147,7 @@
     $(document).ready(function(){
         function renderAll(){
             init();
-            
-            // var pathArray = window.location.pathname.split( '/' );
+
             var slug = "marlborough-little-bugs-club";
             var contest_details = getContestBySlug(slug);
             renderContest("#contest_container", '#contest_template', contest_details)
