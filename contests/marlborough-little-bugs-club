@@ -148,11 +148,9 @@
         function renderAll(){
             init();
             
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            
+            // var pathArray = window.location.pathname.split( '/' );
+            var slug = "marlborough-little-bugs-club";
             var contest_details = getContestBySlug(slug);
-            console.log(slug);
             renderContest("#contest_container", '#contest_template', contest_details)
             
             $.validate();
@@ -203,4 +201,3 @@
         });
     }
 </script>
-<!--<img src="{{alt_photo_url}}" class="details_image"/>-->
