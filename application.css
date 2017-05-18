@@ -2072,7 +2072,7 @@ td.stores_pin{
     font-size: 1.2em;
     line-height: 1.3em;
     color: #6D6F71;
-    padding: 15px 5px 10px 5px;
+    // padding: 15px 5px 10px 5px;
 }
 .contest_page .contest_description p {
     font-family: futura_medium_light, futura_medium_light_ie;
