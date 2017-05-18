@@ -150,8 +150,9 @@
             
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
-            contest_details = getContestBySlug(slug);
-            console.log(contest_details);
+            
+            var contest_details = getContestBySlug(slug);
+            console.log(slug);
             renderContest("#contest_container", '#contest_template', contest_details)
             
             $.validate();
