@@ -23,9 +23,9 @@
                     <div class="col-md-6 margin_30"></div>
                 </div>
                 <div class="row ">
+                    <label>Little Bugs Birthday</label> 
+                    <input type="text" id="birthday" name="contest[birthday]" value="" class="date" style="display:none;"/>
                     <div class="col-md-4 margin_30">
-                        <label>Little Bugs Birthday</label> 
-                        <input type="text" id="birthday" name="contest[birthday]" value="" class="date" style="display:none;"/>
                         <select id="birthday_year">
                             <option value="">Year</option>
                             <option value="2017">2017</option>
