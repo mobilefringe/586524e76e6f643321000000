@@ -2112,7 +2112,7 @@ td.stores_pin{
     height: 40px;
 }
 #contest_form input#age{
-    width:35px;
+    width: 50px;
 }
 #contest_form label.agree_msg {
     font-family: futura_medium_light, Helvetica, sans-serif;
