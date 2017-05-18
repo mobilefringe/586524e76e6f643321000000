@@ -163,17 +163,22 @@
     });
     
     function submit_contest(slug) {
+        $("#birthday").val( 
+            $( "#birthday_year" ).val() + " " +
+            $( "#birthday_month" ).val() + " " +
+            $( "#birthday_day" ).val()
+        );
+        
         var contest_entry = {};
         var contest_data = {};
         contest_data.first_name = $('#first_name').val();
         contest_data.last_name = $('#last_name').val();
+        contest_data.age = $('#age').val();
+        contest_data.birthday = $('#birthday').val();
+        contest_data.note = $('#notes').val();
         contest_data.mailing_address = $('#address').val();
-        contest_data.city = $('#city').val();
-        contest_data.province = $('#province').val();
-        contest_data.postal_code = $('#postal_code').val();
         contest_data.phone = $('#phone').val();
         contest_data.email = $('#email').val();
-        contest_data.newsletter = $('#newsletter_signup').prop("checked");
         
         contest_entry.contest = contest_data;
         
