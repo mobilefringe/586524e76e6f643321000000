@@ -4,7 +4,7 @@
         <script id="contest_template" type="x-tmpl-mustache/text">
             <div class="contest_description">{{{rich_description}}}</div>
             <h1 class="page_title">Little Bugs Club - Signup</h1>
-            <form id="contest_form">
+            <form id="contest_form"  accept-charset="UTF-8" action="/newsletter_no_captcha" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form" method="post">
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
                 <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
                 <input type="hidden" name="cm-name" id="cm-name" />
@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-md-6 margin_30"></div>
                 </div>
-                <div class="row ">
+                <div class="row">
                     <label>Little Bugs Birthday</label> 
                     <input type="text" id="birthday" name="contest[birthday]" value="" class="date" style="display:none;"/>
                     <div class="col-md-4 margin_30">
@@ -133,6 +133,9 @@
                 <div class="row">
                     <div class="col-md-12 margin_30">
                         <button class="btn btn-primary contest_btn">Submit</button>
+                        
+                        <input class="btn btn-success" name="commit" type="submit" value="Join Little Bug Club" style="width:325px; height: 45px;" /> 
+                        
                         <br /><br />
                         <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
                     </div>
@@ -141,21 +144,6 @@
         </script>
     </div>
 </div>
-<div class="newsletter_page">
-    <h1 class="page_title">Little Bugs Club - Signup</h1>
-    <form accept-charset="UTF-8" action="/newsletter_no_captcha" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form" method="post">
-        <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
-        <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{contest.id}}" />
-        <label>Little Bugs Name</label>  
-        <input type="text" id="first_name" name="contest[first_name]" value="" />
-        <br/>
-        <label>Little Bugs Age</label> 
-        <input type="text" id="age" name="contest[age]" value="" />
-
-        <div class="line_break">&nbsp;</div>
-        <input class="btn btn-success" name="commit" type="submit" value="Join Little Bug Club" style="width:325px; height: 45px;" />        
-    </form>
-</div>    
 <script>
     $(document).ready(function(){
         function renderAll(){
