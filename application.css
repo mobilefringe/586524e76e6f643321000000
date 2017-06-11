@@ -1159,7 +1159,7 @@ a.btn-prime {
 }
 
 .flex-direction-nav a{
-    background: url(//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/png/1497039147000/bg_direction_nav.png) no-repeat scroll 0 0 transparent;
+    // background: url(//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/png/1497039147000/bg_direction_nav.png) no-repeat scroll 0 0 transparent;
     height: 50px;
 }
 
@@ -1203,11 +1203,6 @@ a.btn-prime {
 .admin_edit ul{
     padding-top:0px;
 }
-
-
-
-
-
 
 /************** store details *************/
 .back_to{
