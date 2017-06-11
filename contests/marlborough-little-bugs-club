@@ -144,59 +144,63 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        function renderAll(){
-            init();
-
-            var slug = "marlborough-little-bugs-club";
-            var contest_details = getContestBySlug(slug);
-            renderContest("#contest_container", '#contest_template', contest_details)
-            
-            $.validate();
-            $('#contest_form').submit(function(e){
-                e.preventDefault();
-                $('.btn-success').prop('disabled', true);
-                submit_contest(slug);
-            });
-        }
-        loadMallDataCached(renderAll);
-    });
-    
-    function submit_contest(slug) {
-        $("#birthday").val( 
-            $( "#birthday_year" ).val() + " " +
-            $( "#birthday_month" ).val() + " " +
-            $( "#birthday_day" ).val()
-        );
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        var slug = "marlborough-little-bugs-club";
+        var contest_details = getContestBySlug(slug);
+        renderContest("#contest_container", '#contest_template', contest_details)
         
-        var contest_entry = {};
-        var contest_data = {};
-        contest_data.first_name = $('#first_name').val();
-        contest_data.last_name = $('#last_name').val();
-        contest_data.age = $('#age').val();
-        contest_data.birthday = $('#birthday').val();
-        contest_data.notes = $('#notes').val();
-        contest_data.mailing_address = $('#address').val();
-        contest_data.phone = $('#phone').val();
-        contest_data.email = $('#email').val();
+        setTimeout(function() {
+            show_content();
+        }, 500);
         
-        contest_entry.contest = contest_data;
+        $.validate();
         
-        var propertyDetails = getPropertyDetails();
-        var host = propertyDetails.mm_host.replace("http:", "");
-        var action = host + "/contests/" + slug + "/create_js_entry"
-        $.ajax({
-            url : action,
-            type: "POST",
-            data : contest_entry,
-            success: function(data){
-               $('#succes_msg').show();
-               $('.contest_btn').prop('disabled', false);
-               $('#contest_form').trigger('reset');
-            },
-            error: function (data){
-                alert('An error occured while processing your request. Please try again later!')
-            }
+        $('#contest_form').submit(function(e){
+            e.preventDefault();
+            $('.btn-success').prop('disabled', true);
+            submit_contest(slug);
         });
     }
+    loadMallDataCached(renderAll);
+});
+
+function submit_contest(slug) {
+    $("#birthday").val( 
+        $( "#birthday_year" ).val() + " " +
+        $( "#birthday_month" ).val() + " " +
+        $( "#birthday_day" ).val()
+    );
+    
+    var contest_entry = {};
+    var contest_data = {};
+    contest_data.first_name = $('#first_name').val();
+    contest_data.last_name = $('#last_name').val();
+    contest_data.age = $('#age').val();
+    contest_data.birthday = $('#birthday').val();
+    contest_data.notes = $('#notes').val();
+    contest_data.mailing_address = $('#address').val();
+    contest_data.phone = $('#phone').val();
+    contest_data.email = $('#email').val();
+    
+    contest_entry.contest = contest_data;
+    
+    var propertyDetails = getPropertyDetails();
+    var host = propertyDetails.mm_host.replace("http:", "");
+    var action = host + "/contests/" + slug + "/create_js_entry"
+    $.ajax({
+        url : action,
+        type: "POST",
+        data : contest_entry,
+        success: function(data){
+           $('#succes_msg').show();
+           $('.contest_btn').prop('disabled', false);
+           $('#contest_form').trigger('reset');
+        },
+        error: function (data){
+            alert('An error occured while processing your request. Please try again later!')
+        }
+    });
+}
 </script>
