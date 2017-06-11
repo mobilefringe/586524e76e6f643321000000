@@ -84,21 +84,13 @@
             
             <div class="line_break">&nbsp;</div>
             <!-- Captcha END -->
-    
     </div>
 </div>
 <div class="mobile_line_break"></div>     
-
-
-
-
-
-
 <script>
-$(document).ready(function(){
+$(document).ready(function(e){
+    init(e);
     function renderAll(){
-        init();
-        
         var prop_details = getPropertyDetails();
         renderPropertyDetails('#map_container', '#map_template', prop_details);
 
@@ -117,6 +109,10 @@ $(document).ready(function(){
                 $("#error_msg").fadeIn("fast");
             }
         }); 
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
     }
     loadMallDataCached(renderAll); 
 });
