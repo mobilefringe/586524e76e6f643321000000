@@ -207,14 +207,12 @@ a:hover {
     padding:0;
     position:relative;
 }
-
 .top_nav{
-    background-image:url(PRIMARY_NAV_IMAGE);
+    // background-image:url(PRIMARY_NAV_IMAGE);
     height:auto;    
     border: none;
     position:relative;
 }
-
 .brand_nav{
     height: 36px;
     width: 100%;
@@ -223,18 +221,15 @@ a:hover {
     top:0px;    
     z-index:100;
 }
-
 .brand_nav .select_parent{
     width: 220px;
     overflow:hidden;
 }
-
 .brand_nav .select_locale_parent{
     width: 100px;
     margin-left:15px;
     overflow:hidden;
 }
-
 .brand_nav select{
     border: none;
     border-radius: 0 0 0 0;
@@ -247,38 +242,31 @@ a:hover {
     appearance: none;
     line-height:1em;
     background-color: #e0e0e0;
-    background: url(//www.mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994) no-repeat 82% 50% #ddd;
+    background: url(//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/png/1497038985000/arrow_down.png) no-repeat 82% 50% #ddd;
     background-size: 14px 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #555555;
 }
-
 .brand_nav .select_locale_parent select{
    width: 150px;
-   background: url(//www.mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994) no-repeat 80px 50% #ddd;
+   background: url(//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/png/1497038985000/arrow_down.png) no-repeat 80px 50% #ddd;
    background-size:14px 10px;
 }
-
 .brand_nav .arrow-down{
     width: 0; 
     height: 0; 
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
 	border-top: 5px solid black;
-    
     position: absolute;
     z-index:910;
     right:30px;
 }
-
-
-
 .content_area{
-    background-image:url(BACKGROUND_IMAGE);
+    // background-image:url(BACKGROUND_IMAGE);
     background-color: #D6D6D6;
 }
-
 .container-fluid{
     padding: 0px;
 }
@@ -334,11 +322,9 @@ h8 {
 .hidden_now {
     display: none;
 }
-
 legend{
 	color:#000000;
 }
-
 .nav-tabs > .active > a{
     height:auto;
 	background-image:none;
@@ -348,7 +334,6 @@ legend{
     cursor: default;
 	border-radius:0px;
 }
-
 .nav-tabs > .active > a:hover {
 	height:41px;
 	background-image:none;
@@ -359,61 +344,46 @@ legend{
 	border-bottom-left-radius:0px;
 	border-bottom-right-radius:0px;
 }
-
 .trim_screen{
     margin: 0 auto;
     // padding: 0 10px;
     position: relative;
     max-width: 1005px;
 }
-
 .container_body{
     max-width:77%;    
     min-height: 450px;
 }
-
 #nav_right{
     position: absolute;
     right: 0px;
     top: -40px;
 }
-
 #nav_right a{
     color: black;
     text-decoration:underline;
 }
-
 #site_logo{
     position:relative;
     height:52px;
 }
-
-
 .nav_container{
     padding-bottom: 3px;    
 }
-
 #site_nav{
     position: relative;
     height: 56px;
 }
-
-
-#site_nav ul li ul li a:hover
-{
+#site_nav ul li ul li a:hover {
     color: black;
 }
-
 #site_nav hr{
     position: absolute;
     bottom: 0px;
 }
-
 .dropdown{
     position:relative;
 }
-
-
 #site_nav ul{
     position:absolute;
     top: 8px;
@@ -421,12 +391,10 @@ legend{
     margin-left:0px;
     list-style:none;
 }
-
 #site_nav li{    
     width:auto;
     float:left;
 }
-
 #site_nav li button{
     font-family: futura_condensed;
     height: auto;    
@@ -451,8 +419,6 @@ legend{
     border: solid 1px gray;
     border-radius: 5px;
 }
-
-
 #site_nav ul.dropdown-menu li{
     width: 100%;
     display: block;
@@ -464,23 +430,18 @@ legend{
 	border-top-color: #DEDEDE; 
 	background-color: #DEDEDE;
 }
-
 .hours_bottom_nav span2{
     width:18%
 }
-
 .bottom_nav{
     padding: 0px;
     padding-top: 15px;
 	border: none; 
 	background-color: #f6f6f6;    
-    
 }
-
 .bottom_nav .container-fluid{
     padding: 0px 15px 15px;
 }
-
 .bottom_nav label{
     color: black;
     font-size:1.5em;
@@ -491,13 +452,11 @@ legend{
     float:left;
     margin-right:10px;
 }
-
 .bottom_nav .social_box{
     float:left;
     margin-right:2%;
     max-width: 300px;
 }
-
 .social_icon {
     margin-right: 5px;
     color: #1c9798;
@@ -535,10 +494,8 @@ legend{
     font-weight: normal;
     vertical-align: middle;
 }
-
 .newsletter_box .btn {
     border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
-
     display: inline-block;
     padding: 4px 14px;
     margin-bottom: 0;
@@ -557,18 +514,15 @@ legend{
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
     font-family: inherit;
 }
-
 #success_subscribe{
     display: none;
 }
-
 .bottom_nav .nav_site_map {
     color: #64676c;
     // float:left;
     width: 20%\9;    
     font-size:.9em;    
 }
-
 .bottom_nav .nav_site_map .site_map_cols {
     column-count: 2;
     -moz-column-count: 2;
@@ -591,12 +545,10 @@ legend{
 .nav_site_map_link{
     height: 210px;
 }
-
 .bottom_nav .nav_site_map .nav_sitemap_item {
     width: auto;
     margin-right: 0;
     float: none;
-    
 }
 .bottom_nav .nav_site_map .nav_sitemap_item a {
     color: #64676c;   
@@ -615,8 +567,6 @@ legend{
     text-align: left;
     padding: 3px 0 3px 15px;
 }
-
-
 .bottom_nav_header{
 	color:white;
     font-weight:bold;
@@ -624,11 +574,9 @@ legend{
 .bottom_nav_list{
     color:white;
 }
-
 .rounded-corners{
 	background-color:#E0E0E0;
 }
-
 .footer {
     background-color:black; 
 	color:white;    
@@ -639,7 +587,6 @@ legend{
     font-size: 8pt;
     height: 60px;
 }
-
 .footer a{
     color: white;    
 }
@@ -647,19 +594,16 @@ legend{
     float: right;
     padding:2px 10px 0 0 ;    
 }
-
 .footer span{
     padding: 15px 10px;
     display: inline-block;
 }
-
 .footer_text{
     font-size: 1em;
     position:absolute;
     bottom:5px;
     margin:0px;
 }
-
 .fb-like-box{
     border: 1px solid #315C99;
 }
@@ -667,16 +611,13 @@ legend{
     display: inline-block;
     position: relative;
 }
-
 .property_manager_logo{
     text-align:right;
 }
-
 .main_content {
     margin-left: -15px;
     margin-right: -15px;
 }
-
 .banner{
 	background-color:white;
     position:relative;
@@ -805,21 +746,18 @@ legend{
     background-color: #282828;
     border-style: none;
     border: none;
-    background-image: url(//www.mallmaverick.com/assets/top_nav_background.png);
+    // background-image: url(//www.mallmaverick.com/assets/top_nav_background.png);
     background-size: 100% 55px;
     background-repeat: repeat-x;
 }
-
 ul.store_tabs{
     position: absolute;
     right: 0px;  
     top: -50px;
 }
-
 ul.store_tabs li{
     margin: 0px;
 }
-
 ul.store_tabs li .arrow-down{
     width: 0; 
     height: 0; 
@@ -831,12 +769,10 @@ ul.store_tabs li .arrow-down{
     right: 10px;
     top: 10px
 }
-
 ul.store_tabs li a, 
 ul.store_tabs li a:hover,
 ul.store_tabs li.active a,
-ul.store_tabs li.active a:hover
-{
+ul.store_tabs li.active a:hover {
     font-family: futura_condensed;
     font-weight: 100;
     width: auto;
@@ -844,13 +780,10 @@ ul.store_tabs li.active a:hover
     border-radius: 0;
     padding: 5px 35px 5px 15px;
     background-color: #282828;
-    
 }
-
 .pin{
 	background-color:#00000;
 }
-
 .btn-nav {
   color: black;
   font-weight:normal;
@@ -860,13 +793,11 @@ ul.store_tabs li.active a:hover
   padding: 0 0 0 20px;
   border: none;
 }
-
 a.btn-nav {
     color:white;    
 }
-
 .btn-nav:hover,.btn-nav:focus,.btn-nav:active  {
-    background-image:url(PRIMARY_NAV_SELECTED_IMAGE);
+    // background-image:url(PRIMARY_NAV_SELECTED_IMAGE);
 }
 
 .btn-nav a span {
@@ -898,11 +829,9 @@ a.btn-prime {
   padding-left:25px;
   margin-bottom: 10px;
 }
-
 .nav-bar{
-   background-image:url(PRIMARY_NAV_IMAGE);
+//   background-image:url(PRIMARY_NAV_IMAGE);
 }
-
 .alphabet_bg{
     background-color:white;
     border-bottom: 2px solid #000000;
@@ -910,19 +839,15 @@ a.btn-prime {
     // display: flex;
     // justify-content: space-between;
 }
-
 .alphabet_bg .btn-secondary {
     padding: 0 0.45%;
 }
-
 .btn-prime:hover,.btn-prime:focus,.btn-prime:active,.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active  {
 	background-color:white;
-    background-image:url(PRIMARY_NAV_SELECTED_IMAGE);
+    // background-image:url(PRIMARY_NAV_SELECTED_IMAGE);
 }
-
 .btn-secondary {
     background-color: transparent;
-    // background-image:url("//www.mallmaverick.com/primary_nav_images/original/missing.png");
     color: #000;
     font-family: inherit;
     margin: 2px;
@@ -934,49 +859,38 @@ a.btn-prime {
     font-size: 14pt;
     font-weight: bold;
 }
-
 .btn-social {
   color:#616161;
-  background-image:url(SECONDARY_BUTTON_IMAGE);
+//   background-image:url(SECONDARY_BUTTON_IMAGE);
    -moz-box-shadow: -1px 1px 2px 0px #1D1D1D;
   -webkit-box-shadow: -1px 1px 2px 0px #1D1D1D;
    box-shadow: -1px 1px 2px 0px #1D1D1D;
 }
-
 .btn-social:hover {
   color:#616161;
-  background-image:url(SECONDARY_BUTTON_SELECTED_IMAGE);
+//   background-image:url(SECONDARY_BUTTON_SELECTED_IMAGE);
 }
-
-
-
 .btn-3{
   color:#616161;
-  background-image:url(SECONDARY_BUTTON_IMAGE); 
+//   background-image:url(SECONDARY_BUTTON_IMAGE); 
    -moz-box-shadow: -1px 1px 2px 0px #1D1D1D;
   -webkit-box-shadow: -1px 1px 2px 0px #1D1D1D;
    box-shadow: -1px 1px 2px 0px #1D1D1D; 
 }
-
 .btn-3:hover{
   color:#616161;
-  background-image:url(SECONDARY_BUTTON_SELECTED_IMAGE);  
+//   background-image:url(SECONDARY_BUTTON_SELECTED_IMAGE);  
 }
-
 .caret{
     border-top: 5px solid #616161;
     color:#616161;
 }
-
 .connect_with_us{
    color:#42245C;   
 }
-
-
 .btn-social:hover {
     border-color:#1F090B;
 }
-
 .content_title{
 	color:#79151C;
 }
@@ -988,15 +902,6 @@ a.btn-prime {
     color:#371e17;
     margin-top:-3px;
 }
-
-// .custom_dropdown .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
-//     background-color: #371e17;
-//     background-image: -moz-linear-gradient(center top , #2A163A, #2A163A);
-//     background-image: -webkit-gradient(linear,center top ,center bottom, from(#2A163A), to(#F07900));
-// 	background-image: -o-linear-gradient(center top, #2A163A,#2A163A);
-//     color: #e0dac4;
-// }
-
 .custom_dropdown .dropdown-menu li > p {
 	color:#000000;
 }
@@ -1005,12 +910,9 @@ a.btn-prime {
 .custom_dropdown .dropdown-menu .arrow:after {
   border-color: transparent;
 }
-
-
 .custom_dropdown .dropdown-menu.bottom .arrow {
   border-bottom-color: #E0DAC4;
 }
-
 .custom_dropdown .dropdown-menu.bottom .arrow:after {
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
@@ -1104,7 +1006,6 @@ a.btn-prime {
     right: 0;
     top: 0;
 }
-
 .right_feature_box{
     width:100%;
     height:auto;
@@ -1112,21 +1013,17 @@ a.btn-prime {
     position: relative;
     font-family:futura_condensed;
 }
-
 .feature_box{
     position: relative
 }
-
 .feature_box img{
     width: 100%;
 }
-
 .feature_boxes{
     margin-top:10px;
     /* display:none; */
     font-family:futura_condensed;
 }
-
 .feature_label, .long_feature_label {
     margin: 0;
     color: white;
@@ -1164,35 +1061,28 @@ a.btn-prime {
 .feature_boxes .long_feature_box:first-child + .long_feature_box + .long_feature_box{
     margin-right: 1%;
 }
-
-
 .long_feature_label{
     position: absolute;
     top: 81%;
     height: 100%;
     opacity: .9;  
 }
-
 .long_feature_box .feature_label label{
     font-family: inherit;
     font-size:1em;
     margin:0px;
 }
-
 .long_feature_label p {
     font-size: 0.5em;
     line-height: 1em;
     margin-top: 10px;
 }
-
 .hours_day{
     color:#616161;
 }
-
 .hours_hour{
 	color:#818181;
 }
-
 .hour_box{
     width: 100%;    
     background-color:#d2d2d2;
@@ -1200,12 +1090,10 @@ a.btn-prime {
     z-index: 999;
     font-family: futura_condensed;
 }
-
 .hour_box .hour_info {
     // padding: 40px 0 5px;
     height: 220px;
 }
-
 .hour_box .home_hours_info{
     padding: 0px 10px 0;
     margin: 10px 0 5px;
@@ -1271,7 +1159,7 @@ a.btn-prime {
 }
 
 .flex-direction-nav a{
-    background: url(/system/site_images/photos/000/000/098/original/bg_direction_nav.png?1365699774) no-repeat scroll 0 0 transparent;
+    background: url(//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/png/1497039147000/bg_direction_nav.png) no-repeat scroll 0 0 transparent;
     height: 50px;
 }
 
