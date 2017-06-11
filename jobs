@@ -102,6 +102,10 @@
             else {
                 $('#no_jobs').show();
             }
+            
+            setTimeout(function() {
+                show_content();
+            }, 500);
         }
         loadMallDataCached(renderAll); 
     })
