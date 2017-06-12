@@ -3,7 +3,7 @@
         <div class="row-fluid">
             <div class="map">
             	<div class="demo1">
-                    <img src="//www.mallmaverick.com/system/properties/maps/000/000/041/original/Site_Map_revised_2016_MF.png?1471625629" class="imgMap" id="map_image" />        		
+                    <img src="" class="imgMap" id="map_image" />        		
             		<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">{{name}}</div>	
             	</div>
             </div>
