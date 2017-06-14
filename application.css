@@ -1502,6 +1502,20 @@ td.stores_pin{
     text-align:right;
 }
 
+/********* contest form *********/
+#contest_form label{
+    font-weight:500;
+}
+#contest_form input {
+    max-width:300px;
+    width: 100%;
+}
+#contest_form input#postal_code{
+    width:65px;
+}
+#contest_form input#age{
+    width:35px;
+}
 
 /******** pages **********/
 .page_body h1{
