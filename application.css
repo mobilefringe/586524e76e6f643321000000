@@ -1572,6 +1572,9 @@ td.stores_pin{
     .row-fluid .span5 {
         width: 40.17094017094017%;
     }
+    .row-fluid .span6 {
+        width: 48.717948717948715%;
+    }
 }
 
 /********* simply-scroll-list *********/
