@@ -1605,7 +1605,6 @@ td.stores_pin{
         cursor: pointer;
         -webkit-appearance: button;
         -moz-appearance: button;
-        appearance: button;
     }
 }
 
