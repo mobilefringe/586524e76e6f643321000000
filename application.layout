@@ -418,10 +418,10 @@
         </div>
         <div class="footer trim_screen">
             <span>
-                &copy; 2015 Marlborough Mall | <a href="/pages/marlborough-privacy-policy" target="_blank">Privacy Policy</a> | Powered By <a href="//www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
+                &copy; 2017 Marlborough Mall | <a href="/pages/marlborough-privacy-policy" target="_blank">Privacy Policy</a> | Powered By <a href="//www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
             </span>
             <a href="//www.20vic.com/" target="_blank">
-                <img ALT="20vic_logo" src="//aberdeenmall.ca/system/site_images/photos/000/000/775/original/20vic_logo.png?1381341465" />
+                <img ALT="20vic_logo" src="//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/png/1497207475000/20vic_logo.png" />
             </a>
         </div>
     </footer>
@@ -429,7 +429,6 @@
     <!--Javascript-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-    
     <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
     <script src='//www.google.com/recaptcha/api.js'></script>
