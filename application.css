@@ -1580,8 +1580,8 @@ td.stores_pin{
         transition: border linear 0.2s, box-shadow linear 0.2s;
     }
     textarea {
-        width: 206px;
-        height: auto;
+        width: 86%;
+        height: 100px;
         display: block;
         background-color: #ffffff;
         border: 1px solid #cccccc;
