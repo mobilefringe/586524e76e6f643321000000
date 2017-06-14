@@ -1603,7 +1603,7 @@ td.stores_pin{
     }
     input[type="submit"] {
         cursor: pointer;
-        -webkit-appearance: button-bevel;
+        appearance: button;
     }
 }
 
