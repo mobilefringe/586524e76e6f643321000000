@@ -1335,8 +1335,8 @@ hr{
     display: none;
 }
 #promo_details_container img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    // height: 100%;
 }
 /************** lightbox *************/
 .lightbox {
