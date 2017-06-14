@@ -348,7 +348,7 @@ function renderPromotions(container, template, collection){
             // val.image_url = "";
         }
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-            val.promo_image_url_abs  = "//www.mallmaverick.com/system/sites/logo_images/000/000/040/original/marlborough_logo.jpg?1399497653";
+            val.promo_image_url_abs  = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -462,7 +462,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//www.mallmaverick.com/photos/original/missing.png";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
@@ -553,7 +553,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
         } else {
             val.image_url = val.image_url;
         }
@@ -579,7 +579,7 @@ function renderPostDetails(container, template, collection){
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
         } else {
             val.image_url = val.image_url;
         }
@@ -626,7 +626,7 @@ function show_png_pin(trigger, map){
 					<div class="text">\
 					<strong>'+ selectedOptionName + '</strong>\
 				</div>\
-				<img src="//www.mallmaverick.com/system/sites/map_markers/000/000/027/original/map_marker.png?1417461836" width="45px" height="59px" alt="marker" />\
+				<img src="//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/png/1497039299000/map_marker.png" width="45px" height="59px" alt="marker" />\
 				</div>\
 			</div>'
 			]
