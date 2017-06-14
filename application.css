@@ -1601,7 +1601,10 @@ td.stores_pin{
         line-height: 30px;
         color: #555555;
     }
-    
+    input[type="submit"] {
+        cursor: pointer;
+        -webkit-appearance: button;
+    }
 }
 
 /********* simply-scroll-list *********/
