@@ -1588,11 +1588,17 @@ td.stores_pin{
         transition: border linear 0.2s, box-shadow linear 0.2s;
     }
     select {
+        margin-bottom: 9px;
+        padding: 4px 6px;
         width: 220px;
         height: 30px;
-        line-height: 30px;
-        background-color: #ffffff;
+        display: inline-block;
         border: 1px solid #cccccc;
+        border-radius: 3px;
+        background-color: #ffffff;
+        font-size: 14px;
+        line-height: 30px;
+        color: #555555;
     }
     
 }
