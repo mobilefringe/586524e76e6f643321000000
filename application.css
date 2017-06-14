@@ -1562,6 +1562,16 @@ td.stores_pin{
         color: #555555;
         transition: border linear 0.2s, box-shadow linear 0.2s;
     }
+    .row-fluid [class*="span"] {
+        display: block;
+        float: left;
+        min-height: 30px;
+        box-sizing: border-box;
+    }
+
+    .row-fluid .span5 {
+        width: 40.17094017094017%;
+    }
 }
 
 /********* simply-scroll-list *********/
