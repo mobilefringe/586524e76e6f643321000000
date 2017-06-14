@@ -1546,6 +1546,23 @@ td.stores_pin{
 }
 
 .page_body #contest_form {
+    .row-fluid {
+        width: 100%;
+    }
+    .row-fluid [class*="span"] {
+        display: block;
+        float: left;
+        min-height: 30px;
+        box-sizing: border-box;
+    }
+
+    .row-fluid .span5 {
+        width: 40%;
+    }
+    .row-fluid .span6 {
+        margin-left: 2.5%;
+        width: 50%;
+    }
     input {
         margin-bottom: 9px;
         padding: 4px 6px;
@@ -1562,20 +1579,7 @@ td.stores_pin{
         color: #555555;
         transition: border linear 0.2s, box-shadow linear 0.2s;
     }
-    .row-fluid [class*="span"] {
-        display: block;
-        float: left;
-        min-height: 30px;
-        box-sizing: border-box;
-    }
-
-    .row-fluid .span5 {
-        width: 40%;
-    }
-    .row-fluid .span6 {
-        margin-left: 2.5%;
-        width: 50%;
-    }
+    
 }
 
 /********* simply-scroll-list *********/
