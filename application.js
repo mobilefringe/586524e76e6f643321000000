@@ -584,11 +584,11 @@ function renderPostDetails(container, template, collection){
         //     val.image_url = val.image_url;
         // }
         
-        if (val.author.length <= 0) {
-            val.author = "Marlborough Mall"
-        } else {
-            val.author = val.author;
-        }
+        // if (val.author.length <= 0) {
+        //     val.author = "Marlborough Mall"
+        // } else {
+        //     val.author = val.author;
+        // }
         
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
         val.publish_date = published_on.format("MMMM Do, YYYY");
