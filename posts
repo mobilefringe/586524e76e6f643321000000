@@ -19,7 +19,7 @@ $(document).ready(function(e){
     init(e);
     function renderAll(){
         var blog = getBlogDataBySlug('marlborough-main');
-        var posts = blog.posts
+        var posts = blog.posts.reverse();
         renderPosts('#blog_container', '#blog_template', posts);
         
         setTimeout(function() {
