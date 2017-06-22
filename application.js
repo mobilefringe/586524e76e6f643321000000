@@ -578,16 +578,16 @@ function renderPostDetails(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
-        if (val.image_url.indexOf('missing.png') > 0) {
+        if (val.image_url.indexOf('missing.png') > -1) {
             val.image_url = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
         } else {
             val.image_url = val.image_url;
         }
         
-        if (val.author != null && val.author.length > 0) {
-            val.author = val.author;
-        } else {
+        if (val.author.length <= 0) {
             val.author = "Marlborough Mall"
+        } else {
+            val.author = val.author;
         }
         
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
