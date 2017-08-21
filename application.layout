@@ -468,7 +468,7 @@
     <script src="/helper.js" type="text/javascript"></script>
 
     <script>
-        setEndPoint('//marlborough.mallmaverick.com/api/v3/marlborough/all.json');
+        setEndPoint('//marlborough.mallmaverick.com/api/v4/marlborough/all.json');
     </script>
     
     <script>
