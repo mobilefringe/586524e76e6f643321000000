@@ -26,7 +26,8 @@ $(document).ready(function(e) {
         var slug = pathArray[pathArray.length-1];
         var post = getPostDetailsBySlug(slug);
         console.log(post)
-        renderPostDetails("#post_container", "#post_template", post);
+        var blog_posts = getBlogDataBySlug('marlborough-main');
+        renderPostDetails("#post_container", "#post_template", post, blog_posts);
         
         setTimeout(function() {
             show_content();
