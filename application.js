@@ -559,7 +559,7 @@ function renderPostDetails(container, template, collection){
     // });
     // $(container).html(item_rendered.join(''));
     
-    var rendered = Mustache.render(template_html, main_post);
+    var rendered = Mustache.render(template_html, collection);
     item_list.push(rendered);
     $(container).html(item_list.join(''));
 }
