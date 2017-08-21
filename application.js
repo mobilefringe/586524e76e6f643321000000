@@ -522,9 +522,14 @@ function renderPosts(container, template, collection){
 }
 
 function renderPostDetails(container, template, collection){
+    // var item_list = [];
+    // var item_rendered = [];
+    // var template_html = $(template).html();
+    
     var item_list = [];
-    var item_rendered = [];
     var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    
     // $.each( collection , function( key, val ) {
         if (collection.image_url == null) {
             collection.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
