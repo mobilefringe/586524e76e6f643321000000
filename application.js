@@ -537,7 +537,7 @@ function renderPostDetails(container, template, collection){
         // } else {
         //     val.image_url = val.image_url;
         // }
-        
+        console.log(val.author)
         if (val.author.length <= 0) {
             val.author = "Marlborough Mall"
         } else {
