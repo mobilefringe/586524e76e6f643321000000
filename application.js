@@ -554,10 +554,14 @@ function renderPostDetails(container, template, collection){
         // var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
         // val.publish_date = published_on.format("MMMM Do, YYYY");
 
-        var rendered = Mustache.render(template_html, collection);
-        item_rendered.push(rendered);
+        // var rendered = Mustache.render(template_html, collection);
+        // item_rendered.push(rendered);
     // });
-    $(container).html(item_rendered.join(''));
+    // $(container).html(item_rendered.join(''));
+    
+    var rendered = Mustache.render(template_html, main_post);
+    item_list.push(rendered);
+    $(container).html(item_list.join(''));
 }
 
 function show_png_pin(trigger, map){
