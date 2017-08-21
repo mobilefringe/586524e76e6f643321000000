@@ -525,12 +525,13 @@ function renderStoreListCatetories(container, template, category_list,stores){
         
         $.each( stores , function( i, store ) {
             var store_category = store.categories;
+            console.log(store_category);
             var a = store.categories.indexOf(category_id);
             
             if (a > -1){
                 if (count == 0){
                     store.show  = "display:block"; 
-                }else{
+                } else {
                     store.show  = "display:none"; 
                 }
                 store.header = category_name;
