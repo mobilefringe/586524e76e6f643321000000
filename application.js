@@ -546,8 +546,8 @@ function renderPostDetails(container, template, collection){
             collection.author = "Marlborough Mall"
         }
         
-        var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.publish_date = published_on.format("MMMM Do, YYYY");
+        // var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
+        // val.publish_date = published_on.format("MMMM Do, YYYY");
 
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
