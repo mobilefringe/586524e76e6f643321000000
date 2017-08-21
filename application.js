@@ -434,7 +434,7 @@ function renderStoreList(container, template, collection, type){
             val.show = "display:block;";
         }
         console.log(val.total_published_promos)
-        if (val.total_published_promos > 0){
+        if (val.total_published_promos != null){
             val.promotion_exist = "display:inline";
         } else {
             val.promotion_exist = "display:none";
