@@ -24,7 +24,7 @@ $(document).ready(function(e) {
     function renderAll (){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
-        var post = getPostDetailsBySlug(slug);
+        var post = getPublishedPostDetailsBySlug(slug);
         console.log(post)
         renderPostDetails("#post_container", "#post_template", post);
         
