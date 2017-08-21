@@ -258,19 +258,16 @@ function renderEvents(container, template, collection){
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
             val.event_image_url = store_details.store_front_url_abs;
-        }
-        else {
+        } else {
             val.store_name = "Marlborough Mall";
             // val.event_image_url = val.event_image_url_abs;
         }
         if(val.event_image_url.indexOf('missing.png') < 0){
             val.event_image_url = val.logo;
-        }
-        else{
+        } else {
             if(val.image_url.indexOf('missing.png') < 0){
                 val.logo = val.image_url;
-            }
-            else{
+            } else {
                 val.logo = "";
             }
         }
