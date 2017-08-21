@@ -549,7 +549,7 @@ function renderPostDetails(container, template, collection){
         // var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
         // val.publish_date = published_on.format("MMMM Do, YYYY");
 
-        var rendered = Mustache.render(template_html,val);
+        var rendered = Mustache.render(template_html, collection);
         item_rendered.push(rendered);
     // });
     $(container).html(item_rendered.join(''));
