@@ -257,10 +257,8 @@ function renderEvents(container, template, collection){
             var store_details = getStoreDetailsByID(val.eventable_id);
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
-            val.event_image_url = store_details.store_front_url_abs;
         } else {
             val.store_name = "Marlborough Mall";
-            // val.event_image_url = val.event_image_url_abs;
         }
         
         if(val.event_image_url.indexOf('missing.png') < 0){
@@ -272,6 +270,7 @@ function renderEvents(container, template, collection){
                 val.logo = "";
             }
         }
+        
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
