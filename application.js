@@ -337,12 +337,10 @@ function renderPromotions(container, template, collection){
             var store_details = getStoreDetailsByID(val.promotionable_id);
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
-            val.image_url = store_details.store_front_url_abs;
-        }
-        else{
+        } else {
             val.store_name = "Marlborough Mall";
-            // val.image_url = "";
         }
+        
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
             val.promo_image_url_abs  = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
         }
@@ -352,8 +350,7 @@ function renderPromotions(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         
@@ -374,20 +371,17 @@ function renderPromoDetails(container, template, collection){
             var store_details = getStoreDetailsByID(val.promotionable_id);
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
-            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "";
-            }
-            else{
-                val.image_url = store_details.store_front_url_abs;
-            }
-        }
-        else{
+            // if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
+            //     val.image_url = "";
+            // } else {
+            //     val.image_url = store_details.store_front_url_abs;
+            // }
+        } else {
             val.store_name = "Marlborough Mall";
-            val.image_url = "";
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
-            val.promo_image_show="display:none";
+            val.promo_image_show = "display:none";
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -395,8 +389,7 @@ function renderPromoDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         var rendered = Mustache.render(template_html,val);
@@ -404,6 +397,7 @@ function renderPromoDetails(container, template, collection){
     });
     $(container).html(item_rendered.join(''));
 }
+
 function renderStoreList(container, template, collection, type){
     var item_list = [];
     var item_rendered = [];
