@@ -526,6 +526,7 @@ function renderPostDetails(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
+        console.log(val.image_url)
         if (val.image_url != null) {
             val.image_url = val.image_url;
         } else {
