@@ -438,11 +438,6 @@ function renderStoreDetails(container, template, collection, slug){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
-        // if ((val.store_front_url).indexOf('missing.png') > -1){
-        //     val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
-        // } else {
-        //     val.alt_store_front_url = getImageURL(val.store_front_url); 
-        // }
         val.category_list = getCategoriesNamesByStoreSlug(slug);
         val.map_x_coordinate = val.x_coordinate - 19;
         val.map_y_coordinate = val.y_coordinate - 58;
