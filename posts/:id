@@ -8,7 +8,7 @@
                 {{title}}
             </h1>
             <p>{{publish_date}} + {{author}}</p>
-            <img src="{{image_url}}" />
+            <img src="{{post_imagel}}" />
                 
             <p>{{{html_body}}}</p>
         </script>
