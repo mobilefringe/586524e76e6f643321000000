@@ -539,7 +539,7 @@ function renderPostDetails(container, template, collection){
         //     val.image_url = val.image_url;
         // }
         console.log(val.author)
-        if (val.author == undefined || val.author == nul) {
+        if (val.author == undefined || val.author == null) {
             val.author = "Marlborough Mall"
         } else {
             val.author = val.author;
