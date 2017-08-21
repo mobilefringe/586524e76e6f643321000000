@@ -525,6 +525,7 @@ function renderPostDetails(container, template, collection){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
+    console.log(collection)
     $.each( collection , function( key, val ) {
         // if (val.image_url == null) {
         //     val.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
