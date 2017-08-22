@@ -64,7 +64,7 @@ $(document).ready(function(e) {
     
             
         
-        var rendered = Mustache.render(template_html, post);
+        var rendered = Mustache.render(template_html, post_details);
         item_list.push(rendered);
         $(container).html(item_list.join(''));
     }
