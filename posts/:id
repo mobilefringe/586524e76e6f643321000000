@@ -7,7 +7,7 @@
                 </a>
                 {{title}}
             </h1>
-            <p>{{publish_date}} + {{author}}</p>
+            <p>{{publish_date}} + {{post_author}}</p>
             <img src="{{post_imagel}}" />
                 
             <p>{{{html_body}}}</p>
@@ -53,10 +53,10 @@ $(document).ready(function(e) {
                 val.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
             }
             
-            if (val.author.length < 1) {
-                val.author = "Marlborough Mall"
+            if (val.author != null) {
+                val.post_author = val.author;
             } else {
-                val.author = val.author;
+                val.post_author = "Marlborough Mall"
             }
             
             var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
