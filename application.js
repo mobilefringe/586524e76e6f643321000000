@@ -521,30 +521,30 @@ function renderPosts(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-function renderPostDetails(container, template, collection){
+function renderPostDetails(container, template, post_details){
     var item_list = [];
-    var item_rendered = [];
     var template_html = $(template).html();
-    $.each( collection , function( key, val ) {
-        if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
-        } else {
-            val.image_url = val.image_url;
-        }
-        
-        if (val.author.length <= 0) {
-            val.author = "Marlborough Mall"
-        } else {
-            val.author = val.author;
-        }
-        
-        var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.publish_date = published_on.format("MMMM Do, YYYY");
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    
+    console.log(post_details)
+    if (post_details.image_url != null || post_details.image_url != undefined) {
+        post_details.post_image = post_details.image_url;
+    } else {
+        post_details.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
+    }
+    
+    if (post_details.author.length > 0) {
+        post_details.author_name = post_details.author;
+    } else {
+        post_details.author_name = "Marlborough Mall"
+    }
+    
+    var published_on = moment(post_details.publish_date).tz(getPropertyTimeZone());
+    post_details.publish_date = published_on.format("MMMM Do, YYYY");
 
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
-    });
-    $(container).html(item_rendered.join(''));
+    var rendered = Mustache.render(template_html, post_details);
+    item_list.push(rendered);
+    $(container).html(item_list.join(''));
 }
 
 function show_png_pin(trigger, map){
