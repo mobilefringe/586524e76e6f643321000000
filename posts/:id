@@ -53,11 +53,11 @@ $(document).ready(function(e) {
                 post_details.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
             }
             
-            // if (post.author != null) {
+            if (post_details.author != null || post_details.author != "") {
                 post_details.post_author = post_details.author;
-            // } else {
-                // post.post_author = "Marlborough Mall"
-            // }
+            } else {
+                post_details.post_author = "Marlborough Mall"
+            }
             
             var published_on = moment(post_details.publish_date).tz(getPropertyTimeZone());
             post_details.publish_date = published_on.format("MMMM Do, YYYY");
