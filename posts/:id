@@ -47,11 +47,11 @@ $(document).ready(function(e) {
         var template_html = $(template).html();
         // $.each( collection , function( key, val ) {
             console.log(post.image_url)
-            // if (val.image_url != null || val.image_url != undefined) {
-            //     val.post_image = val.image_url;
-            // } else {
-            //     val.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
-            // }
+            if (post.image_url != null || post.image_url != undefined) {
+                post.post_image = post.image_url;
+            } else {
+                post.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
+            }
             
             // if (val.author != null) {
             //     val.post_author = val.author;
@@ -62,8 +62,8 @@ $(document).ready(function(e) {
             // var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
             // val.publish_date = published_on.format("MMMM Do, YYYY");
     
-            // var rendered = Mustache.render(template_html,val);
-            // item_rendered.push(rendered);
+            var rendered = Mustache.render(template_html, post);
+            item_rendered.push(rendered);
         // });
         $(container).html(item_rendered.join(''));
     }
