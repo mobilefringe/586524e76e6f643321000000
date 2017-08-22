@@ -43,8 +43,8 @@ $(document).ready(function(e) {
     
     function renderPostDetails(container, template, post){
         var item_list = [];
-        var item_rendered = [];
-        var template_html = $(template).html();
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
         // $.each( collection , function( key, val ) {
             console.log(post.image_url)
             if (post.image_url != null || post.image_url != undefined) {
@@ -62,10 +62,11 @@ $(document).ready(function(e) {
             // var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
             // val.publish_date = published_on.format("MMMM Do, YYYY");
     
-            var rendered = Mustache.render(template_html, post);
-            item_rendered.push(rendered);
-        // });
-        $(container).html(item_rendered.join(''));
+            
+        
+        var rendered = Mustache.render(template_html, post);
+        item_list.push(rendered);
+        $(container).html(item_list.join(''));
     }
 })
 </script>
