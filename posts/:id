@@ -7,7 +7,7 @@
                 </a>
                 {{title}}
             </h1>
-            <p>{{publish_date}} + {{post_author}}</p>
+            <p>{{publish_date}} + {{ author_name }}</p>
             <img src="{{post_image}}" />
                 
             <p>{{{html_body}}}</p>
@@ -54,9 +54,9 @@ $(document).ready(function(e) {
             }
             
             if (post_details.author != null || post_details.author != "") {
-                post_details.post_author = post_details.author;
+                post_details.author_name = post_details.author;
             } else {
-                post_details.post_author = "Marlborough Mall"
+                post_details.author_name = "Marlborough Mall"
             }
             
             var published_on = moment(post_details.publish_date).tz(getPropertyTimeZone());
