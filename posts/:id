@@ -62,8 +62,8 @@ $(document).ready(function(e) {
             // var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
             // val.publish_date = published_on.format("MMMM Do, YYYY");
     
-            var rendered = Mustache.render(template_html,val);
-            item_rendered.push(rendered);
+            // var rendered = Mustache.render(template_html,val);
+            // item_rendered.push(rendered);
         // });
         $(container).html(item_rendered.join(''));
     }
