@@ -41,12 +41,12 @@ $(document).ready(function(e) {
     }
     loadMallDataCached(renderAll); 
     
-    function renderPostDetails(container, template, collection){
+    function renderPostDetails(container, template, post){
         var item_list = [];
         var item_rendered = [];
         var template_html = $(template).html();
-        $.each( collection , function( key, val ) {
-            console.log(val.image_url)
+        // $.each( collection , function( key, val ) {
+            console.log(post.image_url)
             if (val.image_url != null || val.image_url != undefined) {
                 val.post_image = val.image_url;
             } else {
