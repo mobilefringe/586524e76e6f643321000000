@@ -59,8 +59,8 @@ $(document).ready(function(e) {
                 post.post_author = "Marlborough Mall"
             }
             
-            // var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-            // val.publish_date = published_on.format("MMMM Do, YYYY");
+            var published_on = moment(post.publish_date).tz(getPropertyTimeZone());
+            post.publish_date = published_on.format("MMMM Do, YYYY");
     
             
         
