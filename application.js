@@ -525,8 +525,7 @@ function renderPostDetails(container, template, post_details){
     var item_list = [];
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
-    
-    console.log(post_details)
+     
     if (post_details.image_url != null || post_details.image_url != undefined) {
         post_details.post_image = post_details.image_url;
     } else {
