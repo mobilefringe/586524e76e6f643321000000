@@ -52,7 +52,7 @@ $(document).ready(function(e) {
             post_details.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
         }
         
-        if (post_details.author != null || post_details.author != "") {
+        if (post_details.author.length > 0) {
             post_details.author_name = post_details.author;
         } else {
             post_details.author_name = "Marlborough Mall"
