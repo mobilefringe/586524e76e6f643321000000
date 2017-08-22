@@ -47,11 +47,11 @@ $(document).ready(function(e) {
         Mustache.parse(template_html);   // optional, speeds up future uses
         // $.each( collection , function( key, val ) {
             console.log(post.image_url)
-            // if (post.image_url != null || post.image_url != undefined) {
+            if (post.image_url != null || post.image_url != undefined) {
                 post.post_image = post.image_url;
-            // } else {
-            //     post.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
-            // }
+            } else {
+                post.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
+            }
             
             if (post.author != null) {
                 post.post_author = post.author;
