@@ -39,31 +39,5 @@ $(document).ready(function(e) {
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }
     loadMallDataCached(renderAll); 
-    
-    function renderPostDetails(container, template, post_details){
-        var item_list = [];
-        var template_html = $(template).html();
-        Mustache.parse(template_html);   // optional, speeds up future uses
-        
-        console.log(post_details)
-        if (post_details.image_url != null || post_details.image_url != undefined) {
-            post_details.post_image = post_details.image_url;
-        } else {
-            post_details.post_image = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
-        }
-        
-        if (post_details.author.length > 0) {
-            post_details.author_name = post_details.author;
-        } else {
-            post_details.author_name = "Marlborough Mall"
-        }
-        
-        var published_on = moment(post_details.publish_date).tz(getPropertyTimeZone());
-        post_details.publish_date = published_on.format("MMMM Do, YYYY");
-
-        var rendered = Mustache.render(template_html, post_details);
-        item_list.push(rendered);
-        $(container).html(item_list.join(''));
-    }
 })
 </script>
