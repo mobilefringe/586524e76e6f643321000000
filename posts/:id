@@ -46,7 +46,7 @@ $(document).ready(function(e) {
         var template_html = $(template).html();
         Mustache.parse(template_html);   // optional, speeds up future uses
         // $.each( collection , function( key, val ) {
-            console.log(post.image_url)
+
             if (post_details.image_url != null || post_details.image_url != undefined) {
                 post_details.post_image = post_details.image_url;
             } else {
@@ -59,8 +59,8 @@ $(document).ready(function(e) {
                 // post.post_author = "Marlborough Mall"
             // }
             
-            var published_on = moment(post.publish_date).tz(getPropertyTimeZone());
-            post.publish_date = published_on.format("MMMM Do, YYYY");
+            var published_on = moment(post_details.publish_date).tz(getPropertyTimeZone());
+            post_details.publish_date = published_on.format("MMMM Do, YYYY");
     
             
         
