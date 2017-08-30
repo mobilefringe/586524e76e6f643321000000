@@ -336,6 +336,7 @@ function renderPromotions(container, template, collection){
         
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
             val.promo_image_url_abs  = "//codecloud.cdn.speedyrails.net/sites/586524e76e6f643321000000/image/jpeg/1497450277000/marlborough_logo.jpg";
+            
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -368,7 +369,7 @@ function renderPromoDetails(container, template, collection){
             val.store_name = "Marlborough Mall";
         }
         
-        if(val.promo_image_url_abs.indexOf('missing.png') > -1){
+        if(val.promo_image_url_abs.indexOf('missing.png') > -1 || val.promo_image_url_abs == null){
             val.promo_image_show = "display:none";
         }
         
