@@ -34,7 +34,7 @@
     <div id="page_body"></div>
     <div id="contact_form" class="hidden_now">
 
-        <form id="msg-contact" accept-charset="UTF-8" action="//mobilefringe.createsend.com/t/d/s/tupht/"  enctype="multipart/form-data"  method="post"><form id="msg-contact" accept-charset="UTF-8" action="//mobilefringe.createsend.com/t/d/s/tupht/"  enctype="multipart/form-data"  method="post">
+        <form id="msg-contact" accept-charset="UTF-8" action="//mobilefringe.createsend.com/t/d/s/tupht/"  enctype="multipart/form-data"  method="post">
             <input id="cm-name" type="hidden" name="cm-name" />
             <div class="row-fluid" style="margin-top:15px;">
                 <div class="span3">
