@@ -109,9 +109,9 @@
                         <li class="mobile_menu_item">
                           <a href='/pages/marlborough-contact-us'>Contact Us</a>
                         </li>
-                        <li class="mobile_menu_item">
-                          <a href='/pages/marlborough-media-kit'>Media Kit</a>
-                        </li>
+                        <!--<li class="mobile_menu_item">-->
+                        <!--  <a href='/pages/marlborough-media-kit'>Media Kit</a>-->
+                        <!--</li>-->
                         <li class="mobile_menu_item">
                           <a href='/pages/marlborough-privacy-policy'>Privacy Policy</a>
                         </li>
@@ -200,9 +200,9 @@
                             <li>
                                 <a class="nav_a" href='/pages/marlborough-contact-us' target='_self'>Contact Us</a>
                             </li>
-                            <li>
-                                <a class="nav_a" href='/pages/marlborough-media-kit' target='_self'>Media Kit</a>
-                            </li>
+                            <!--<li>-->
+                            <!--    <a class="nav_a" href='/pages/marlborough-media-kit' target='_self'>Media Kit</a>-->
+                            <!--</li>-->
                             <li>
                                 <a class="nav_a" href='/pages/marlborough-privacy-policy' target='_self'>Privacy Policy</a>
                             </li>
@@ -409,7 +409,7 @@
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-contact-us' target='_self'>Contact Us</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/marlborough-media-kit' target='_self'>Media Kit</a>
+                                <!--<a class="site_map_submenu" href='/pages/marlborough-media-kit' target='_self'>Media Kit</a>-->
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-privacy-policy' target='_self'>Privacy Policy</a>
                             </div>
