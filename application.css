@@ -699,7 +699,7 @@ legend{
 .store_row_name {
     padding-left: 12px;
     display: inline;
-    color:gray;   
+    color: #000;   
 }
 
 .store_row_name a{
@@ -712,8 +712,8 @@ legend{
 }
 
 .store_row_name span{ 
-   font-weight:normal;
-   font-size:0.8em;
+   font-weight: normal;
+   font-size: 0.8em;
 }
 
 .store_list .tabbable{
