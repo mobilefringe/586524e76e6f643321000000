@@ -229,8 +229,7 @@
                 <div class="col-md-3">
                     <div class="hour_box">  
                         <div class="hour_info">
-                            <label for="hours_today" class="feature_label">HOURS TODAY</label>
-                            <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                            <span for="hours_today" class="feature_label">HOURS TODAY</span>
                             <div id="home_hours_container" class="home_hours_info">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
                                     {%raw%}
@@ -366,14 +365,12 @@
                 </div>
         		<div class="col-sm-12 col-md-4">  
         		    <div class="mobile_line_break"></div>
-                    <div class="nav_site_map hidden-xs">
+                    <nav class="nav_site_map hidden-xs">
                         <label for="nav_site_map_link_id" >NAVIGATION</label>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">STORES</span>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/stores' target='_self'>Store Directory</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/map' target='_self'>Shopping Map</a>
                             </div>
                             <div class="nav_sitemap_item">
@@ -388,9 +385,7 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">GUEST SERVICES</span>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-guest-services' target='_self'>Guest Services</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-security' target='_self'>Security</a>
                             </div>
                             <div class="nav_sitemap_item">
@@ -400,21 +395,12 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">ABOUT US</span>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/hours' target='_self'>Shopping Hours</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-leasing' target='_self'>Leasing</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-community-donations' target='_self'>Community/Donations</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-mall-walking-program' target='_self'>Mall Walking</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-contact-us' target='_self'>Contact Us</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                  <a class="site_map_submenu" href='/pages/marlborough-act-green-initiatives' target='_self'>ACT Green Initiatives</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <!--<a class="site_map_submenu" href='/pages/marlborough-media-kit' target='_self'>Media Kit</a>-->
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/marlborough-act-green-initiatives' target='_self'>ACT Green Initiatives</a>
                                 <a class="site_map_submenu" href='/pages/marlborough-privacy-policy' target='_self'>Privacy Policy</a>
                             </div>
                             <div class="nav_sitemap_item">
@@ -423,12 +409,12 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                     <div class="line_break hidden-xs"></div>
                     <div class="social_links hidden-xs">
-    		           
                         <span>
                             <a href="//www.instagram.com/marlboroughmall" target="_blank">
+                                <p style="display:none">Instagram</p> 
                                 <i class="fa fa-instagram social_icon" aria-hidden="true"></i>
                             </a>
                         </span>
