@@ -14,8 +14,7 @@
                         <label for="postal_pop_up" >Postal Code</label>
                         <input id="postal_pop_up" type="text" name=cm-f-ydltut>
                         
-                        
-                        <label for="agreePopUp"></label>
+                        <label for="agreePopUp" style="display: none;">I agree to receive on-going communications</label>
                         <input type="checkbox" class="info_check" id="agreePopUp" required/> I agree to receive newsletters from Marlborough Mall
                         
                         <br/> 
