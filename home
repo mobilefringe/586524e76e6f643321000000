@@ -15,8 +15,8 @@
                         <input id="postal_pop_up" type="text" name=cm-f-ydltut>
                         
                         <label>
-                            <label for="agree"></label>
-                            <input type="checkbox" class="info_check" id="agree" required/> I agree to receive newsletters from Marlborough Mall
+                            <label for="agreePopUp"></label>
+                            <input type="checkbox" class="info_check" id="agreePopUp" required/> I agree to receive newsletters from Marlborough Mall
                         </label>
                         <br/> 
                         <button class="btn btn-success">Subscribe</button>                      
