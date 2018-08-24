@@ -28,7 +28,7 @@
                         <input type="text" id="birthday" name="contest[birthday]" value="" class="date" style="display:none;"/>
                     </div>
                     <div class="col-md-4">
-                        <label style="display:none">Select a Year</label>
+                        <label for="birthday_year" style="display:none">Select a Year</label>
                         <select id="birthday_year" required data-validation="required">
                             <option value="">Year</option>
                             <option value="2017">2017</option>
@@ -57,7 +57,7 @@
                         </select>    
                     </div>
                     <div class="col-md-4">
-                        <label style="display:none">Select a Month</label>
+                        <label for="birthday_month" style="display:none">Select a Month</label>
                         <select id="birthday_month" required data-validation="required">
                             <option value="">Month</option>
                             <option value="Jan">Jan</option>
@@ -75,7 +75,7 @@
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label style="display:none">Select a Day</label>
+                        <label for="birthday_day" style="display:none">Select a Day</label>
                         <select id="birthday_day" required data-validation="required">
                             <option value="">Day</option>
                             <option value="1">1</option>
