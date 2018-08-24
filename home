@@ -54,6 +54,7 @@ $(document).ready(function(e){
         
         $('.flexslider').flexslider({
             animation: "slide",
+            pauseOnHover: true,
         });
         
         // *** POP UP *** //
