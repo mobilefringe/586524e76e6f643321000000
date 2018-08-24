@@ -203,9 +203,6 @@
                             <li>
                                 <a class="nav_a" href='/pages/marlborough-act-green-initiatives' target='_self'>ACT Green Initiatives</a>
                             </li>
-                            <!--<li>-->
-                            <!--    <a class="nav_a" href='/pages/marlborough-media-kit' target='_self'>Media Kit</a>-->
-                            <!--</li>-->
                             <li>
                                 <a class="nav_a" href='/pages/marlborough-privacy-policy' target='_self'>Privacy Policy</a>
                             </li>
@@ -297,13 +294,6 @@
         </div>
     </div>
     <div class="line_break"></div>
-    
-    <!-- Rohingya Crisis BANNER -->
-    <!--<div class="trim_screen">-->
-    <!--    <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">-->
-    <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt=""/>-->
-    <!--    </a>-->
-    <!--</div>-->
     
     <footer>
         <div class="bottom_nav trim_screen">
