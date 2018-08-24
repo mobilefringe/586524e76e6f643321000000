@@ -1,4 +1,4 @@
-<div class="store_list">
+<div id="top" class="store_list">
     <h1 class="page_title">Store List</h1>
     <hr>
     <div class="tabbable">
