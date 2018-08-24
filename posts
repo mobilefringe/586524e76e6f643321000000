@@ -4,7 +4,7 @@
     <div id="blog_container">
         <script id="blog_template" type="x-tmpl-mustache/text">
             <div class="blogpost">
-                <h2><a href='/posts/{{slug}}'>{{title}}</a></h2>
+                <h2>{{title}}</h2>
                 <p>{{publish_date}} + {{author}}</p>
                 <img src="{{image_url}}" alt="{{title}}"/>
                 <p class="blogpost_content">{{body}}</p>
