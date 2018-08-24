@@ -366,7 +366,7 @@
         		<div class="col-sm-12 col-md-4">  
         		    <div class="mobile_line_break"></div>
                     <nav class="nav_site_map hidden-xs">
-                        <label for="nav_site_map_link_id" >NAVIGATION</label>
+                        <span for="nav_site_map_link_id" >NAVIGATION</span>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">STORES</span>
