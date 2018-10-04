@@ -261,14 +261,17 @@ function renderEvents(container, template, collection){
             val.store_name = "Marlborough Mall";
         }
         console.log("val", val,val.image_url )
-        if(val.event_image_url.indexOf('missing.png') < 0){
-            val.event_image_url = val.logo;
-        } else {
-            if(val.image_url.indexOf('missing.png') < 0){
-                val.logo = val.image_url;
-            } else {
-                val.logo = "";
-            }
+        // if(val.event_image_url.indexOf('missing.png') < 0){
+        //     val.event_image_url = val.logo;
+        // } else {
+        //     if(val.image_url.indexOf('missing.png') < 0){
+        //         val.logo = val.image_url;
+        //     } else {
+        //         val.logo = "";
+        //     }
+        // }
+        if(val.event_image_url.indexOf('missing.png') > 0){
+            val.event_image_url_abs = "http://assets.codecloudapp.com/sites/599b07c16e6f6458f3170000/image/jpeg/1497450277000/marlborough_logo.jpg";
         }
         
         var show_date = moment(val.show_on_web_date);
