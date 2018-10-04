@@ -260,7 +260,7 @@ function renderEvents(container, template, collection){
         } else {
             val.store_name = "Marlborough Mall";
         }
-        
+        console.log("val", val)
         if(val.event_image_url.indexOf('missing.png') < 0){
             val.event_image_url = val.logo;
         } else {
