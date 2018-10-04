@@ -271,7 +271,7 @@ function renderEvents(container, template, collection){
         //     }
         // }
         if(val.event_image_url.indexOf('missing.png') > 0){
-            val.event_image_url_abs = "http://assets.codecloudapp.com/sites/599b07c16e6f6458f3170000/image/jpeg/1497450277000/marlborough_logo.jpg";
+            val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/599b07c16e6f6458f3170000/image/png/1538678079838/marlboroughlogo2.png";
         }
         
         var show_date = moment(val.show_on_web_date);
